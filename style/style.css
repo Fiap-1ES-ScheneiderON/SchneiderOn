@@ -1,16 +1,24 @@
 body{
     background-color:rgb(252, 252, 252)
 }
+
 nav{
     background-color: rgb(255, 255, 255)
 }
+
 main{
     height: 75vh
 }
+
 on{
     color: #3CCB5B;
     
 }
-a{
-    
+
+input{
+    color: #3CCB5B;
+}
+
+.l{
+    color: #3CCB5B;
 }
