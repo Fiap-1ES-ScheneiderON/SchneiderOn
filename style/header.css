@@ -1,9 +1,5 @@
 
-.flexbox_container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .header_mobile{
   width: auto;

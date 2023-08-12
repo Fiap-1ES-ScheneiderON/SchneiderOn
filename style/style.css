@@ -23,7 +23,11 @@ body {
 
 }
 
-
+.flexbox_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .espaco{
     height: 45em;
