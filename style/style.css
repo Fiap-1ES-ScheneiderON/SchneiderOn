@@ -1,3 +1,6 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./footer.css);
 
 :root {
     --branco: #FFFFFF;
@@ -7,13 +10,25 @@
     --verde1: #3CCB5B;
     --verde2: #009530;
     --verde4: #87D300;
-    --fonte_principal: "Montserrat"
-    --peso_texto: '400',
-    --peso_nome: '500',
-    --peso_desafio: '800'
+    --fonte_principal: "Montserrat";
+    --peso_texto: '400';
+    --peso_nome: '500';
+    --peso_desafio: '700';
 }
 
+body {
+    font-family: var(--fonte_principal);
+    font-weight: 400;
+    background-color: var(--branco);
 
+}
 
+.flexbox_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
+.espaco{
+    height: 45em;
+}
