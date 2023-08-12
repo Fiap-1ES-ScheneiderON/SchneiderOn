@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./header.css);
+@import url(./footer.css);
 
 :root {
     --branco: #FFFFFF;
@@ -24,3 +25,6 @@ body {
 
 
 
+.espaco{
+    height: 45em;
+}

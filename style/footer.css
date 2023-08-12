@@ -1,0 +1,16 @@
+
+.footer_mobile{
+  width: auto;
+  height: 3.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  border: 1px solid var(--cinza-2, #9FA0A4);
+  background: #FFF;
+  box-shadow: 0px -4px 4px 0px rgba(60, 203, 91, 0.21);
+}
+
+
+
+
+
+
