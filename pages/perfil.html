@@ -6,7 +6,7 @@
     <title>Perfil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/perfil.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../script/script.js"></script>
 </head>
@@ -14,67 +14,71 @@
     <header>
         <nav>
             <div class="header">
-                    <a href="../index.html"><img src="../images/SchneiderOn Final .png" alt="Logo SchneiderOn"></a>
-                    <h2><strong>200</strong></h2>
-                    <a href="./challenge.html"><img src="../images/bi_coin.png" alt="Impact Points"></a>
-                    <a href="./menu.html"><img src="../images/menu.png"></a>
+                <a href="../index.html"><img class="logo-header" src="../images/SchneiderOn Final .png"></a>
+                <div class="right"> 
+                    <h2 class="score">200</h2>
+                    <a href="./challenge.html"><img class="impactpoints" src="../images/bi_coin.png"></a>
+                    <a href="./menu.html"><img class="menu" src="../images/menu.png"></a>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="img-perfil">
-            <img src="../images/foto de perfil.png">
-        </div>
-        <div class="nome-perfil">
-            <h2>Paula Freitas</h2>
-        </div>
-        <div class="nivel-perfil">
-            <a href="./challenge.html"><img src="../images/semente.png"></a>
-            <img id="lapis-foto" src="../images/lapis.png">
-            <a href="./challenge.html"><h2>Semente</h2></a>
-            <h3>Lvl 1</h3>
-        </div>
-        <div class="infos-perfil">
-            <h3>São Paulo, Brasil - Engenharia</h3>
-        </div>
-        <div class="sobre-mim">
-            <h3>Sobre mim</h3>
-            <img id="lapis-sobre-mim" src="../images/lapis.png">
-            <div>
-                <p class="text-sobre-mim">
-                    25 anos<br>
-                    Engenheira elétrica<br>
-                    Apaixonada por animais 🐾<br>
-                    PCD♿
-                </p>
+        <div class="perfil-page">
+            <div class="img-perfil">
+                <img src="../images/foto de perfil.png">
             </div>
-        </div>
-        <h2><strong>Postagens</strong></h2>
-        <div class="postagens">
-            <a href="./perfil.html"><img src="../images/foto de perfil.png"></a>
-            <h2>Paula Freitas</h2>
-            <a href="./challenge.html"><img src="../images/semente.png"></a>
-            <a href="./challenge.html"><h2>Semente</h2></a>
-            <img id="tres-pontos" src="../images/tres-pontos.png">
-            <div class="conteudo">
-                <p>
-                    Estou muito feliz em compartilhar com vocês o impacto que causamos!!!<br>
-                    Hoje foi colocado lixeiras de coleta seletiva no meu condomínio!<br> 
-                    Juntos podemos fazer a diferença!<br>
-                    #ComprometidaComOMeioAmbiente<br>
-                    #SouSchneiderOn
-                </p>
-                <div class="botoes">
-                    <button>Coleta Seletiva</button>
-                    <button>Sustententabilidade em casa</button>
+            <div class="nome-perfil">
+                <h2>Paula Freitas</h2>
+            </div>
+            <div class="nivel-perfil">
+                <a href="./challenge.html"><img src="../images/semente.png"></a>
+                <img id="lapis-foto" src="../images/lapis.png">
+                <a href="./challenge.html"><h2>Semente</h2></a>
+                <h3>Lvl 1</h3>
+            </div>
+            <div class="infos-perfil">
+                <h3>São Paulo, Brasil - Engenharia</h3>
+            </div>
+            <div class="sobre-mim">
+                <h3>Sobre mim</h3>
+                <img id="lapis-sobre-mim" src="../images/lapis.png">
+                <div>
+                    <p class="text-sobre-mim">
+                        25 anos<br>
+                        Engenheira elétrica<br>
+                        Apaixonada por animais 🐾<br>
+                        PCD♿
+                    </p>
                 </div>
-                <div class="img-post">
-                    <img >
-                </div>
-                <div class="interacoes">
-                    <img id="folhas" src="../images/folhas.png">
-                    <img id="comentarios" src="../images/comentarios.png">
-                    <img id="salvar" src="../images/salvar.png">
+            </div>
+            <h2><strong>Postagens</strong></h2>
+            <div class="postagens">
+                <a href="./perfil.html"><img src="../images/foto de perfil.png"></a>
+                <h2>Paula Freitas</h2>
+                <a href="./challenge.html"><img src="../images/semente.png"></a>
+                <a href="./challenge.html"><h2>Semente</h2></a>
+                <img id="tres-pontos" src="../images/tres-pontos.png">
+                <div class="conteudo">
+                    <p>
+                        Estou muito feliz em compartilhar com vocês o impacto que causamos!!!<br>
+                        Hoje foi colocado lixeiras de coleta seletiva no meu condomínio!<br> 
+                        Juntos podemos fazer a diferença!<br>
+                        #ComprometidaComOMeioAmbiente<br>
+                        #SouSchneiderOn
+                    </p>
+                    <div class="botoes">
+                        <button>Coleta Seletiva</button>
+                        <button>Sustententabilidade em casa</button>
+                    </div>
+                    <div class="img-post">
+                        <img >
+                    </div>
+                    <div class="interacoes">
+                        <img id="folhas" src="../images/folhas.png">
+                        <img id="comentarios" src="../images/comentarios.png">
+                        <img id="salvar" src="../images/salvar.png">
+                    </div>
                 </div>
             </div>
         </div>
