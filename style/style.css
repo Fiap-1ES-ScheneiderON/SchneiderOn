@@ -1,24 +1,19 @@
-body{
-    background-color:rgb(252, 252, 252)
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;           
+    --cinza1: #626469;
+    --cinza2: #9FA0A4;
+    --verde1: #3CCB5B;
+    --verde2: #009530;
+    --verde4: #87D300;
+    --fonte_principal: "Montserrat"
+    --peso_texto: '400',
+    --peso_nome: '500',
+    --peso_desafio: '800'
 }
 
-nav{
-    background-color: rgb(255, 255, 255)
-}
 
-main{
-    height: 75vh
-}
 
-on{
-    color: #3CCB5B;
-    
-}
 
-input{
-    color: #3CCB5B;
-}
 
-.l{
-    color: #3CCB5B;
-}
