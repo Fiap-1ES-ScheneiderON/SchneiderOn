@@ -35,10 +35,10 @@
 }
 
 .titulo_nome{
-  color: var(--verde-4, #87D300);
+  color: var(--verde2);
   text-align: center;
   font-family: Montserrat;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -60,6 +60,7 @@
 
 .container_categorias{
   display: flex;
+  margin: 0.3em 0;
 }
 .categoria{
   margin-right: 1em;
@@ -71,9 +72,56 @@
   font-weight: 400;
   line-height: normal;
   border-radius: 5px;
-  background: var(--verde-4, #87D300);
+  background: var(--verde2, #87D300);
 }
 
+.midia_postagem{
+  max-width: 100%;
+  max-height: 100%;
+}
 
+.container_interacoes{
+  display: flex;
+  justify-content: space-between;
+}
 
+.container_curtidas_comentarios{
+  display: flex;
+}
 
+.container_curtidas{
+  display: flex;
+  margin-right: 1em;
+}
+
+.container_curtidas_icon{
+  margin-right: 0.3em;
+}
+
+.container_curtidas_numero{
+  color: var(--preto);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container_comentarios{
+  display: flex;
+}
+
+.container_comentarios_icon{
+  margin-right: 0.3em;
+}
+
+.container_comentarios_numero{
+  color: var(--preto);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
