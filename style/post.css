@@ -1,0 +1,79 @@
+
+.container{
+  margin: 1em;
+  display: flex;
+  flex-wrap: 5em;
+}
+
+.foto_perfil{
+  border-radius: 3em;
+  width: 2em;
+  align-self: flex-start;
+}
+
+.usuario_postagem{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.nome_usuario{
+  color: var(--preto);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.titulo_usuario{
+  display:flex;
+}
+
+.titulo_emblema{
+  margin-right: 0.5em;
+}
+
+.titulo_nome{
+  color: var(--verde-4, #87D300);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.usuario_options{
+  align-self: flex-start;
+}
+
+.texto_postagem{
+  word-wrap: break-word;
+  color: var(--preto);
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container_categorias{
+  display: flex;
+}
+.categoria{
+  margin-right: 1em;
+  padding: 0 0.5em;
+  color: var(--branco, #FFF);
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  background: var(--verde-4, #87D300);
+}
+
+
+
+
