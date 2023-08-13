@@ -1,0 +1,38 @@
+.perfil-page{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.img-perfil{
+   text-align: center; 
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.nome-perfil{
+    font-family: var(--fonte_principal);
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+.nivel-perfil{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.nivel-perfil a{
+    text-decoration: none;
+    color: var(--verde4);
+    font-weight: bolder;
+}
+.nivel-perfil img{
+    width: 40px;
+}
+.nivel-perfil h3{
+    font-size: 15px;
+    margin-left: 10px;
+    color: #87D300;
+}
+.infos-perfil{
+    align-items: flex-start;
+}
