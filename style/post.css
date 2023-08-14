@@ -1,0 +1,141 @@
+
+.container{
+  margin: 1em;
+  display: flex;
+  flex-wrap: 5em;
+  justify-content: center;
+  border-bottom: 1px solid var(--cinza2, #9FA0A4);
+}
+
+.foto_perfil{
+  border-radius: 3em;
+  width: 2em;
+  align-self: flex-start;
+}
+
+.usuario_postagem{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.3em;
+}
+
+.nome_usuario{
+  color: var(--preto);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.titulo_usuario{
+  display:flex;
+}
+
+.titulo_emblema{
+  margin-right: 0.5em;
+}
+
+.titulo_nome{
+  color: var(--verde2);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.usuario_options{
+  align-self: flex-start;
+}
+
+.texto_postagem{
+  word-wrap: break-word;
+  color: var(--preto);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container_categorias{
+  display: flex;
+  margin: 0.3em 0;
+}
+.categoria{
+  margin-right: 1em;
+  padding: 0 0.5em;
+  color: var(--branco, #FFF);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  background: var(--verde2, #87D300);
+}
+
+.midia_div{
+  width: 100%; /* A div ocupa 100% da largura disponível */
+  height: 0; /* A altura será calculada automaticamente com base na largura */
+  padding-bottom: 100%; /* Relação altura/largura para manter a proporção */
+  position: relative; 
+  overflow: hidden; 
+  border-radius: 0.5em;
+}
+
+.midia_postagem{
+  position: absolute; /* Posiciona a imagem dentro da div */
+  width: 100%; /* A imagem ocupa 100% da largura da div */
+  height: 100%; /* A imagem ocupa 100% da altura da div */
+  object-fit: cover; /* Ajusta a imagem para preencher completamente o espaço, mantendo a proporção */
+}
+
+.container_interacoes{
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8em 0;
+}
+
+.container_curtidas_comentarios{
+  display: flex;
+}
+
+.container_curtidas{
+  display: flex;
+  margin-right: 1em;
+}
+
+.container_curtidas_icon{
+  margin-right: 0.3em;
+}
+
+.container_curtidas_numero{
+  color: var(--preto);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container_comentarios{
+  display: flex;
+}
+
+.container_comentarios_icon{
+  margin-right: 0.3em;
+}
+
+.container_comentarios_numero{
+  color: var(--preto);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
