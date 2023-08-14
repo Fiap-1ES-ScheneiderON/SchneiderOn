@@ -1,0 +1,126 @@
+*{
+    font-family: var(--fonte_principal);
+}
+.perfil-page{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.img-perfil{
+   text-align: center; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   height: 70px;
+}
+.nome-perfil{
+    font-family: var(--fonte_principal);
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+.nivel-perfil{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.nivel-perfil a{
+    text-decoration: none;
+    color: var(--verde2);
+    font-weight: bolder;
+    font-size: 15px;
+}
+.nivel-perfil img{
+    width: 20px;
+    height: 19px;
+}
+.nivel-perfil h3{
+    font-size: 14px;
+    margin-left: 10px;
+    color: #00952f90;
+}
+.infos-perfil{
+    text-align: start;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.sobre-mim{
+    background-color: #3ccb5b25;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 2px;
+    font-size: 16px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sobre-mim-flex{
+    display: flex;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 1px;
+    margin-bottom: 10px;
+}
+.sobre-mim-flex img{
+    width: 14px;
+    margin-left: 300px;
+}
+.text-sobre-mim{
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-weight:500;
+}
+.titulo-postagem{
+    font-weight: bolder;
+    margin-top: 15px;
+}
+.postagens{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-bottom: 1px solid #9FA0A4;
+}
+.usuario-postagem{
+    display: flex;
+    margin-top: 25px;
+}
+.usuario-postagem h2{
+    font-family: var(--fonte_principal);
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.tres-pontos{
+    height: 5px;
+    margin-left: 238px;
+}
+.nivel-postagem{
+    display: flex;
+}
+.semente-foto{
+    width: 20px;
+    height: 19px;
+}
+.semente{
+    color: var(--verde2);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+
+/* parei aqui */
+
+
+
+.conteudo{
+    margin-left: 54px;
+}
+.interacoes{
+    display: flex;
+    
+}
