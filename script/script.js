@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const curtidaImgs = document.querySelectorAll('.container_curtidas_icon[id="curtida"]');
-  const novaImagemSrc = './images/curtidaVerde.svg'; // Substitua pelo caminho da nova imagem
+  const novaImagemSrc = './images/curtidaVerde.svg'; 
 
   curtidaImgs.forEach(curtidaImg => {
       curtidaImg.addEventListener('click', () => {
@@ -11,4 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       });
   });
+
+  const salvarImgs = document.querySelectorAll('.container_salvar_icon[id="salvar"]');
+  const novaImagemSalvarSrc = './images/SalvarVerde.svg';
+
+  salvarImgs.forEach(salvarImgs => {
+      salvarImgs.addEventListener('click', () => {
+          if (salvarImgs.src.endsWith('Salvar.svg')) {
+            salvarImgs.src = novaImagemSalvarSrc;
+          } else {
+            salvarImgs.src = './images/Salvar.svg';
+          }
+      });
+  });
 });
+
