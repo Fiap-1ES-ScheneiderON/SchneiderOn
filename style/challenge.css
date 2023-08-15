@@ -1,5 +1,5 @@
 
-.weekly_challenge_container{
+.challenge_container{
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.weekly_challenge_titulo{
+.challenge_titulo{
 
   color: var(--preto, #000);
   text-align: center;
@@ -18,7 +18,7 @@
   line-height: normal;
 }
 
-.weekly_challenge_logo{
+.challenge_logo{
   width: 6.5em;
   height: auto;
   flex-shrink: 0;
@@ -86,3 +86,32 @@
 .impact_points{
   width: 1.2em;
 }
+
+.monthly_tags{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+
+.monthly_challenge_imagem{
+  margin: 1em 0;
+}
+.monthly_challenge_texto{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container_interacoes_monthly_challenge{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 0.5em;
+}
+
