@@ -1,0 +1,88 @@
+
+.weekly_challenge_container{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekly_challenge_titulo{
+
+  color: var(--preto, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.weekly_challenge_logo{
+  width: 6.5em;
+  height: auto;
+  flex-shrink: 0;
+  margin-bottom: 0.5em;
+}
+
+.weekly_challenge_desafio_lista{
+  width: auto;
+  border-radius: 0.5rem;
+  background: rgba(60, 203, 91, 0.25);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.weekly_challenge_desafio{
+  display: flex;
+  align-items: center;
+}
+
+.quadrado{
+  width: 0.8rem;
+  height: 0.8rem;
+  flex-shrink: 0;
+  background: var(--branco, #FFF);
+}
+
+.weekly_challenge_icon{
+  margin: 0 0.5em;
+}
+
+.weekly_challenge_texto{
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.weekly_challenge_recompensa{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.weekly_challenge_pontos{
+  margin-left: 1em;
+  margin-right: 0.4em;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.impact_points{
+  width: 1.2em;
+}
