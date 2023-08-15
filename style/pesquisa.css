@@ -1,0 +1,89 @@
+
+.container_pesquisa{
+  display: flex;
+  margin: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_pesquisa_pesquisa_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_pesquisa {
+  background-color: transparent;
+  border: 1px solid var(--verde1);
+  color: var(--preto);
+  border-radius: 24px;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+
+.banner_pesquisa::placeholder {
+  font-family: var(--fonte_principal);
+  color: var(--preto);
+  font-family: Montserrat;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: url("../images/Lupa.svg") no-repeat;
+  background-position: 1em;
+  padding-left: 2.7em;
+}
+
+.container_destaque{
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  justify-content: start;
+  align-items: start;
+}
+
+.destaque_titulo{
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.destaque_topico{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 0.7em;
+}
+
+.destaque_texto{
+  margin-left: 0.5em;
+  color: var(--preto, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container_Assuntos{
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  justify-content: start;
+  align-items: start;
+}
+
+.destaque_texto_mais_assuntos{
+  color: var(--cinza-2, #9FA0A4);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

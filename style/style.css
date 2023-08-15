@@ -4,6 +4,7 @@
 @import url(./post.css);
 @import url(./perfil.css);
 @import url(./challenge.css);
+@import url(./pesquisa.css);
 
 :root {
     --branco: #FFFFFF;
