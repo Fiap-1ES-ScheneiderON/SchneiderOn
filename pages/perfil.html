@@ -32,10 +32,11 @@
             <div class="infos-perfil">
                 <h3>São Paulo, Brasil - Engenharia</h3>
             </div>
-            <div class="sobre-mim">
+            <div class="sobre-mim-div">
                 <div class="sobre-mim-flex">
-                    <h3>Sobre mim</h3>
-                    <img src="../images/lapis.png">
+                    <p class="sobre-mim-title">Sobre mim</p>
+                    <img class="lapis" src="../images/lapis.png">
+                    
                 </div>
                 <div class="text-sobre-mim">
                     <p>
@@ -47,17 +48,19 @@
                 </div>
             </div>
             <h2 class="titulo-postagem">Postagens</h2>
-            <div class="postagens">
-                <div class="usuario-postagem">
-                    <img src="../images/fotoDePerfil.png">
-                    <h2>Paula Freitas</h2>
-                    <img class="tres-pontos" src="../images/tres-pontos.png">
-                </div> 
-                <div class="nivel-postagem">
-                    <img class="semente-foto" src="../images/semente.png">
-                    <h2 class="semente">Semente</h2>
-                </div>
-                <div class="conteudo">
+            <div class="container">
+                <img class="foto-perfil" src="../images/fotoDePerfil.png" alt="foto de perfil">
+                <div>
+                    <div class="postagem-usuario">
+                        <div>
+                            <p class="nome-usuario">Paula Freitas</p>
+                            <div class="titulo">
+                                <img class="semente-foto" src="../images/semente.png" alt="emblema semente">
+                                <p class="semente">Semente</p>
+                            </div>
+                        </div>
+                        <img class="tres-pontos" src="../images/tres-pontos.png" alt="mais opções">
+                    </div> 
                     <p>
                         Estou muito feliz em compartilhar com vocês o impacto que causamos!!!<br>
                         Hoje foi colocado lixeiras de coleta seletiva no meu condomínio!<br> 
@@ -65,23 +68,28 @@
                         #ComprometidaComOMeioAmbiente<br>
                         #SouSchneiderOn
                     </p>
-                    <div class="botoes">
-                        <button>Coleta Seletiva</button>
-                        <button>Sustententabilidade em casa</button>
+                    <div class="container-botoes">
+                        <p class="botoes">Coleta Seletiva</p>
+                        <p class="botoes">Sustententabilidade em casa</p>
                     </div>
-                    <div class="img-post">
-                        <img >
+                    <div class="post-div">
+                        <img class="foto-post" src="../images/postagemColetaSeletiva.svg" alt="Postagem sobre coleta seletiva">
                     </div>
                     <div class="interacoes">
-                        <img id="folhas" src="../images/folhas.png">
-                        <p>235</p>
-                        <img id="comentarios" src="../images/comentarios.png">
-                        <p>23</p>
-                        <img id="salvar" src="../images/salvar.png">
+                        <div class="curtidas-comentarios">
+                            <div class="curtidas">
+                                <img class="curtidas-icon" src="../images/folhas.png" alt="curtidas">
+                                <p class="curtidas-text">235</p>
+                            </div>
+                            <div class="comentarios">
+                                <img class="comentarios-icon" src="../images/comentarios.png" alt="comentarios">
+                                <p class="comentarios-text">23</p>
+                            </div>
+                        </div>
+                        <img class="salvar-icon" src="../images/salvar.png" alt="salvar o post">
                     </div>
                 </div>
             </div>
-        </div>
 
 
         <!-- não codar apartir daqui -->
