@@ -37,6 +37,12 @@
   align-items: center;
 }
 
+.parceiro_iniciativa_imagem{
+  max-width: 100%; 
+  height: auto; 
+}
+
+
 .parceiro_iniciativa_titulo{
   color: #000;
   background: rgba(60, 203, 91, 0.08);
