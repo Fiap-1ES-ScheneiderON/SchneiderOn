@@ -1,0 +1,89 @@
+
+
+.container_loja{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loja_titulo{
+  color: var(--preto, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.loja_titulo_destaque{
+  color: var(--verde1, #3CCB5B);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal
+}
+
+.loja_intro{
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.5em;
+}
+
+.loja_row_itens{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.loja_item{
+  width: 33%;
+  height: auto;
+}
+
+.loja_item_img{
+  max-width: 100%; 
+  height: auto; 
+}
+
+.loja_item_description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loja_item_preco{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  background-color: rgba(60, 203, 91, 0.36);
+  padding: 0.3em 1em;
+  border-radius: 0.4em;
+  width: 60%;
+}
+
+.loja_item_pontos{
+  margin-right: 0.4em;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.loja_item_impact_points{
+  width: 1.2em;
+}
