@@ -1,0 +1,42 @@
+    
+    
+    .main-intro{
+        height: 100vh;
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .on{
+        color:#009530;
+    }
+    
+    .swiper {
+        height: 600px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-button-next{
+
+        color: #009530;
+    }
+
+    .swiper-button-prev{
+
+        color: #009530;
+    }
+
+    .swiper-pagination{
+
+        color: #009530;
+    }
+    
