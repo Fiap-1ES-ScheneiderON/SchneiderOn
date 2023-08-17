@@ -1,0 +1,97 @@
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #3ccb5b;
+  z-index: 1000;
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+
+.overlay_container {
+  margin: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.overlay_perfil_container{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  margin-bottom: 2em;
+}
+
+.overlay_perfil{
+  width: 4.9rem;
+  height: 4.9rem;
+  border-radius: 4em;
+}
+
+.overlay_nome{
+  color: var(--branco, #FFF);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1em;
+}
+
+.overlay_verPerfil{
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 3em;
+}
+
+.overlay_topico{
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 2em;
+}
+
+.overlay a {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overlay_container_botton{
+  position: absolute;
+  bottom: 1.3em; /* Ajuste conforme necessário */
+  right: 1.3em; /* Ajuste conforme necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.overlay_container_botton_img{
+  width: 50%;
+  height: auto;
+}
+.overlay_container_botton_text{
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+

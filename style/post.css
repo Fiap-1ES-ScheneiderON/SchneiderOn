@@ -61,20 +61,26 @@
 }
 
 .container_categorias{
+  margin: 0.5em 0;
   display: flex;
-  margin: 0.3em 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6em;
 }
 .categoria{
-  margin-right: 1em;
-  padding: 0 0.5em;
   color: var(--branco, #FFF);
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 0.7rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border-radius: 5px;
-  background: var(--verde2, #87D300);
+  display: inline-flex;
+  padding: 0rem 0.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.3125rem;
+  background: var(--verde4, #87D300);
 }
 
 .midia_div{
@@ -139,3 +145,4 @@
   font-weight: 500;
   line-height: normal;
 }
+

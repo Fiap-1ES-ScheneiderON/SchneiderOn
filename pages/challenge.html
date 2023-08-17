@@ -4,15 +4,88 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connected By Hunger</title>
+  <title>Challenge Schneider</title>
   <link rel="stylesheet" href="../style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="../SchneiderON/script/script.js"></script>
+  <script src="../script/challengeCurtida.js"></script>
+  <script src="../script/script.js"></script>
+
+
 </head>
 <body>
   <!-- espaço para a barra não ficar em cima dos outros componentes  -->
   <div class="espaco"></div>
   <!-- código apartir daqui -->
+
+  <section class="challenge_container">
+    <p class="challenge_titulo">Weekly Challenge</p>
+    <img class="challenge_logo" src="../images/ShneiderChallenge.svg" alt="Logo da Schneider Challenge">
+    <div class="weekly_challenge_desafios_container">
+      <div class="weekly_challenge_desafio_lista">
+        <div class="weekly_challenge_desafio">
+          <div class="quadrado"></div>
+          <img class="weekly_challenge_icon" src="../images/curtida.svg" alt="icon do desafio de curtidas">
+          <p class="weekly_challenge_texto">Curta 5 postagens que achar interessante</p>
+        </div>
+        <div class="weekly_challenge_recompensa">
+          <p class="weekly_challenge_pontos">15</p>
+          <img class="impact_points" src="../images/bi_coin.png" alt="impact points">
+        </div>
+      </div>
+
+      <div class="weekly_challenge_desafio_lista">
+        <div class="weekly_challenge_desafio">
+          <div class="quadrado"></div>
+          <img class="weekly_challenge_icon" src="../images/ComentarioDesafio.svg" alt="icon do desafio de curtidas">
+          <p class="weekly_challenge_texto">Comente 5 post que achar interessante</p>
+        </div>
+        <div class="weekly_challenge_recompensa">
+          <p class="weekly_challenge_pontos">20</p>
+          <img class="impact_points" src="../images/bi_coin.png" alt="impact points">
+        </div>
+      </div>
+
+      <div class="weekly_challenge_desafio_lista">
+        <div class="weekly_challenge_desafio">
+          <div class="quadrado"></div>
+          <img class="weekly_challenge_icon" src="../images/Post_add.svg" alt="icon do desafio de curtidas">
+          <p class="weekly_challenge_texto">Faça uma postagem na SchneiderON</p>
+        </div>
+        <div class="weekly_challenge_recompensa">
+          <p class="weekly_challenge_pontos">25</p>
+          <img class="impact_points" src="../images/bi_coin.png" alt="impact points">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="challenge_container">
+    <p class="challenge_titulo">Monthly Challenge</p>
+    <img class="challenge_logo" src="../images/ShneiderChallenge.svg" alt="Logo da Schneider Challenge">
+    <div class="monthly_tags">
+      <p class="categoria">Descarte Conciente</p>
+      <p class="categoria">Reutilização</p>
+      <p class="categoria">Sustententabilidade em casa</p>
+    </div>
+    <img class="monthly_challenge_imagem" src="../images/DesafioMensal.svg" alt="imagem ilustrativa sobre o ciclo do óleo">
+    <p class="monthly_challenge_texto">
+      Olá, pessoal da Schneider! Vocês estão prontos para um desafio que vai fazer a diferença para o nosso planeta? 🌎
+      <br><br>No mês de outubro, vamos participar de uma campanha de coleta de óleo de cozinha usado, que é um dos maiores vilões do meio ambiente. Sabia que um litro de óleo pode contaminar até 20 mil litros de água? 😱
+      <br><br>Por isso, queremos incentivar vocês a separar o óleo que usam em casa e trazer para a empresa, onde teremos um ponto de coleta. Assim, vamos evitar que esse resíduo seja descartado de forma incorreta e cause danos à natureza. Além disso, vamos doar todo o óleo arrecadado para uma instituição que transforma esse material em biodiesel, gerando renda e energia limpa. 💚
+      <br><br>Vamos juntos nessa missão? Contamos com a colaboração de todos para fazer da Schneider uma empresa cada vez mais sustentável e responsável. Vamos mostrar que somos uma equipe engajada e comprometida com as boas práticas ambientais. Quem topa o desafio? 🙌
+    </p>
+    <div class="container_interacoes_monthly_challenge">
+      <div class="container_curtidas">
+        <img class="container_curtidas_icon" id="curtida" src="../images/curtida.svg" alt="curtida da página">
+        <p class="container_curtidas_numero">8324</p>
+      </div>
+      <div class="container_comentarios">
+        <img class="container_comentarios_icon" src="../images/comentario.svg" alt="comentários do post">
+        <p class="container_comentarios_numero">3245</p>
+      </div>
+    </div>
+  </section>
+
 
 
 
@@ -23,19 +96,42 @@
     <img class="header_mobile_logo" src="../images/SchneiderOnFinal.png" alt="Logo da Schneider On">
     <div class="flexbox_container header_direita">
       <div class="header_impact_points">
-        <p class="header_impact_points_numero">125</p>
-        <img class="header_impact_points_imagem" src="../images/bi_coin.png" alt="Impact Points">
+        <a href="../pages/shop.html"><p class="header_impact_points_numero">125</p></a>
+        <a href="../pages/shop.html"><img class="header_impact_points_imagem" src="../images/bi_coin.png" alt="Impact Points"></a>
       </div>
-      <img class="header_menu" src="../images/mingcute_menu-fill.svg" alt="menu">
+      <img class="header_menu_perfil" src="../images/perfil.svg" alt="menu">
     </div>
   </section>
+
+  
+  <div class="overlay" id="overlay">
+    <div class="overlay_container">
+      <div class="overlay_perfil_container">
+        <a href="../pages/perfil.html"><img class="overlay_perfil"  src="../images/perfil.svg" alt="foto de perfil"></a>
+        <a href="../pages/perfil.html"><p class="overlay_nome">Paula Freitas</p></a>
+        <a href="../pages/perfil.html"><p class="overlay_verPerfil">Ver perfil</p></a>
+      </div>
+      <p class="overlay_topico">Configurações</p>
+      <p class="overlay_topico">Sobre os níveis</p>
+      <p class="overlay_topico">Sobre as Impact XP</p>
+      <p class="overlay_topico">Loja Schneider</p>
+      <p class="overlay_topico">Desafios anteriores</p>
+      <p class="overlay_topico">Sobre a Schneider On</p>
+    </div>
+    <div class="overlay_container_botton">
+      <img class="overlay_container_botton_img" src="../images/LogoSchneiderBranco.png" alt="Logo da Schneider">
+      <p class="overlay_container_botton_text">Software da Schneider Eletric</p>
+    </div>
+  </div>
+
+
   <section class="footer_mobile">
     <div class="footer_sections flexbox_container">
-      <a href="../index.html"><img class="footer_home" src="../images/home.svg" alt="botão home"></a>
+      <a href="../index.html"><img class="footer_home" src="../images/home-preto.svg" alt="botão home"></a>
       <a href="./pesquisa.html"><img class="footer_search" src="../images/search.svg" alt="botão pesquisa"></a>
-      <a href="./postagem.html"><img class="footer_post" src="../images/post-add.svg" alt="botão postagem"></a>
-      <a href="./challenge.html"><img class="footer_challenge" src="../images/earth-leaf.svg"alt="botão desafio"></a>
-      <a href="./perfil.html"><img class="footer_perfil" src="../images/perfil.svg"alt="botão de perfil do usuário"></a>
+      <a href="./postagem.html"><img class="footer_post" src="../images/Post_add.svg" alt="botão postagem"></a>
+      <a href="./challenge.html"><img class="footer_challenge" src="../images/earth-leaf-green.svg"alt="botão desafio"></a>
+      <a href="./partner.html"><img class="footer_partner" src="../images/ParceiroPreto.svg"alt="botão de parceiros"></a>
     </div>
   </section>
 </body>
