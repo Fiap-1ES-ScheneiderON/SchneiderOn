@@ -68,6 +68,9 @@
 
 .overlay a {
   text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .overlay_container_botton{

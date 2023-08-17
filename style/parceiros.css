@@ -128,3 +128,8 @@
   background-color: var(--verde1);
 }
 
+.a_css{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
