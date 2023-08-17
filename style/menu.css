@@ -69,3 +69,25 @@
 .overlay a {
   text-decoration: none;
 }
+
+.overlay_container_botton{
+  position: absolute;
+  bottom: 1.3em; /* Ajuste conforme necessário */
+  right: 1.3em; /* Ajuste conforme necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.overlay_container_botton_img{
+  width: 50%;
+  height: auto;
+}
+.overlay_container_botton_text{
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
