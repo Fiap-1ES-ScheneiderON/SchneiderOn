@@ -21,11 +21,9 @@
 }
 
 .header_direita{
-  width: 6em;
+  width: 7em;
   margin-right: 1em;
 }
-
-
 
 .header_impact_points{
   display: flex;
@@ -43,9 +41,9 @@
   height: 1.5em;
 }
 
-.header_menu{
-  width: 1.5rem;
-  height: 1.5rem;
+.header_menu_perfil{
+  width: 2.5em;
+  border-radius: 2em;
 }
 
 
