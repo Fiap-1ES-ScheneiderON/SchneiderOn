@@ -1,9 +1,6 @@
     
     
     .main-intro{
-        height: 100vh;
-        width: 100%;
-        max-width: 1000px;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -16,6 +13,7 @@
     
     .swiper {
         height: 600px;
+        display: flex;
     }
 
     .swiper-slide {
