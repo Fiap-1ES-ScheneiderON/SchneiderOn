@@ -18,4 +18,31 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+
+  
+  const headerMenu = document.querySelector(".header_menu_perfil");
+  const overlay = document.querySelector(".overlay");
+
+  // Função para mostrar o div de overlay
+  function showOverlay() {
+    overlay.style.display = "block";
+  }
+
+  // Função para esconder o div de overlay
+  function hideOverlay() {
+    overlay.style.display = "none";
+  }
+
+  // Evento de clique na imagem header_menu
+  headerMenu.addEventListener("click", () => {
+    showOverlay();
+  });
+
+  // Evento de clique fora do div de overlay
+  window.addEventListener("click", (event) => {
+    if (event.target !== overlay && event.target !== headerMenu) {
+      hideOverlay();
+    }
+  });
 });
