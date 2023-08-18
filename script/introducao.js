@@ -5,3 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+// scripts.js
+function playAllVideos() {
+  var videos = document.querySelectorAll('.meuVideo');
+  videos.forEach(function(video) {
+      video.play();
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  playAllVideos();
+});
