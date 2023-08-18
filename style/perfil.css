@@ -1,220 +1,146 @@
-*{
-    font-family: var(--fonte_principal);
+.container_perfil {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.perfil-page{
-    box-sizing: border-box;
-    padding: 30px;
+
+.perfil_dados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.img-perfil{
-   text-align: center; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   height: 70px;
+
+.perfil_img {
+  margin-top: 1em;
+  width: 7em;
+  height: auto;
 }
-.nome-perfil{
-    font-family: var(--fonte_principal);
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-}
-.nivel-perfil{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.nivel-perfil a{
-    text-decoration: none;
-    color: var(--verde2);
-    font-weight: 600;
-    font-size: 15px;
-}
-.nivel-perfil img{
-    width: 28px;
-    height: 28px;
-}
-.nivel-perfil h3{
-    font-size: 14px;
-    margin-left: 10px;
-    color: #00952f90;
-}
-.infos-perfil{
-    text-align: start;
-    align-items: center;
-    margin-top: 30px;
-    font-size: 13px;
-    font-weight: 500;
-}
-.sobre-mim-div{
-    background-color: #3ccb5b59;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin-top: 2px;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.sobre-mim {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px; /* Espaçamento inferior */
-}
-.sobre-mim-title {
-    font-weight: 600;
-    margin-right: 10px;
-}
-.lapis {
-    height: 18px;
-    width: 18px;
-    margin-left: 30px;
-}
-.text-sobre-mim{
-    margin-top: 5px;
-    margin-bottom: 12px;
-    font-weight:500;
-}
-.titulo-postagem{
-    font-weight: bolder;
-    margin-top: 15px;
-}
-.container{
-    margin: 1em;
-    display: flex;
-    flex-wrap: 5em;
-    justify-content: center;
-    border-bottom: 1px solid var(--cinza2, #9FA0A4);
-}
-.foto-perfil{
-    border-radius: 3em;
-    width: 2em;
-    align-self: flex-start;
-}
-.postagem-usuario{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0.3em;
-}
-.nome-usuario{
-    color: var(--preto);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.titulo{
-    display:flex;
-}
-.semente-foto{
-    width: 25px;
-}
-.semente{
-    color: var(--verde2);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-top: 4px;
-}
-.tres-pontos{
-    align-self: flex-start;
-    width: 18px;
-}
-.conteudo{
-    word-wrap: break-word;
-    color: var(--preto);
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-.container-botoes{
-    margin: 0.5em 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.6em; 
-}
-.botoes{
-    color: var(--branco, #FFF);
-    font-family: Montserrat;
-    font-size: 0.7rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: inline-flex;
-    padding: 0rem 0.2rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    border-radius: 0.3125rem;
-    background: var(--verde4, #87D300);
-}
-.post-div{
-    width: 100%; 
-    height: 0; 
-    padding-bottom: 100%;
-    position: relative; 
-    overflow: hidden; 
-    border-radius: 0.5em;
-}
-.foto-post{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.interacoes{
-    display: flex;
-    justify-content: space-between;
-    margin: 0.8em 0;
-}
-.curtidas-comentarios{
-    display: flex;
-}
-.curtidas{
-    display: flex;
-    margin-right: 1em;
-}
-.curtidas-icon{
-    margin-right: 0.3em;
-    height: 25px;
-}
-.curtidas-text{
-    color: var(--preto);
+
+.perfil_nome {
+  margin-top: 0.6em;
+  color: #000;
   text-align: center;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.perfil_nivel_usuario {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil_semente_img {
+  width: 2em;
+}
+
+.perfil_semente_nome {
+  color: var(--verde-4, #87D300);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 0.7em;
+}
+
+.perfil_semente_nivel {
+  color: rgba(135, 211, 0, 0.59);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.perfil_sobre_mim_container {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
+.perfil_sobre_mim_local {
+  margin-bottom: 0.4em;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1em;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 3px;
 }
-.comentarios{
-    display: flex;
+
+.perfil_sobre_mim_dados {
+  background: rgba(60, 203, 91, 0.25);
+  border-radius: 0.5em;
+  width: 100%;
 }
-.comentarios-icon{
-    margin-right: 0.3em;
-    height: 25px;
+
+.perfil_sobre_mim_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-.comentarios-text{
-    color: var(--preto);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 3px;
+
+.perfil_sobre_mim_title {
+  color: var(--preto, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0.5em;
 }
-.salvar-icon{
-    height: 25px;
+
+.perfil_sobre_mim_lapis {
+  width: 1.5em;
+  margin: 0.5em;
+}
+
+.perfil_sobre_mim_text {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 1.3em;
+  margin-bottom: 1em;
+}
+
+.perfil_postagens {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-top: 2em
+}
+
+.perfil_postagens_titulo {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 1em;
 }
