@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid var(--cinza2, #9FA0A4);
 }
 
 .challenge_titulo{
@@ -98,7 +99,7 @@
 .monthly_challenge_imagem{
   margin: 1em 0;
 }
-.monthly_challenge_texto{
+.monthly_challenge_texto, .diversity_challenge_texto{
   color: #000;
   font-family: Montserrat;
   font-size: 12px;
@@ -113,5 +114,11 @@
   align-items: center;
   justify-content: start;
   margin-top: 0.5em;
+  margin-bottom: 0.8em;
 }
 
+.diversity_challenge_imagem{
+  max-width: 100%; 
+  height: auto;
+  margin: 0.7em 0;
+}
