@@ -3,23 +3,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     background-color: #3CCB5B26;
     border-radius: 10px;
 }
 .infos-niveis-img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1em;
 }
 
 .content-section h2 {
-    margin-top: 20px;
+    margin-top: 1em;
+    text-align: center;
     font-weight: bolder;
-    color: #3CCB5B;
+    font-size: 2em;
 }
-.content-section p {
-    margin: 10px;
+
+.content-section h2 span{
+    color: var(--verde1);
+
 }
+
 .div-flex-niveis {
     display: flex;
     flex-direction: column;
@@ -29,27 +34,15 @@
 .div-flex-niveis img{
     height: 100px;
 }
-.div-flex-niveis p{
-    margin-top: 50px;
-}
+
 .div-flex-niveis span{
     font-weight: bolder;
     color: #3CCB5B;
 }
-.semente{
-    display: flex;
-}
-.brotinho{
-    display: flex;
-}
-.jardineiro{
-    display: flex;
-}
-.ecologista{
-    display: flex;
-}
 
-.ambientalista{
+.div_nivel{
     display: flex;
-    margin-bottom: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
