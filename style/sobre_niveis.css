@@ -7,6 +7,15 @@
     background-color: #3CCB5B26;
     border-radius: 10px;
 }
+.container-interno{
+    margin-bottom: 35px;
+}
+.img-niveis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
 .infos-niveis-img {
     max-width: 100%;
     height: auto;
