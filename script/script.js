@@ -63,6 +63,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  const comentario = document.querySelector(".container_comentarios_icon");
+  const overlayProjeto = document.querySelector(".overlayProjeto");
+  const close = document.querySelector(".close")
+
+  // Função para mostrar o div de overlay
+  function showOverlayProjeto() {
+    overlayProjeto.style.display = "block";
+  }
+
+  // Função para esconder o div de overlay
+  function hideOverlayProjeto() {
+    overlayProjeto.style.display = "none";
+  }
+
+  // Evento de clique na imagem header_menu
+  comentario.addEventListener("click", () => {
+    showOverlayProjeto();
+  });
+
+  // Evento de clique fora do div de overlay
+  close.addEventListener("click", (event) => {
+    if (event.target !== overlayProjeto && event.target !== comentario) {
+      hideOverlayProjeto();
+    }
+  });
+
+  overlayContainer.addEventListener("scroll", (event) => {
+    event.stopPropagation();
+  });
+
+
+
+  const curtidaImgsOverlay = document.querySelectorAll(
+    '.overlayProjeto_curtidas_icon[id="curtidaOverlay"]'
+  );
+  const novaImagemSrcOverlay = "./images/curtidaVerde.svg";
+
+  curtidaImgsOverlay.forEach((curtidaImg) => {
+    const numeroTag = curtidaImg.nextElementSibling; // Selecionar o próximo elemento (p) após a imagem
+
+    curtidaImg.addEventListener("click", () => {
+      if (curtidaImg.src.endsWith("curtida.svg")) {
+        curtidaImg.src = novaImagemSrcOverlay;
+        numeroTag.textContent = parseInt(numeroTag.textContent) + 1; // Somar 1
+      } else {
+        curtidaImg.src = "./images/curtida.svg";
+        numeroTag.textContent = parseInt(numeroTag.textContent) - 1; // Subtrair 1
+      }
+    });
+  });
+
 });
 
 var swiper = new Swiper(".swiper", {
