@@ -143,13 +143,20 @@
 
 
     /* Shopping */
-
+    .container_loja p{
+        font-size: 18px;
+    }
 
 
 
     /* Página de perfil */
-
-
-
+    .container_perfil{
+        margin-left: 8em;
+        margin-right: 6em;
+    }
+    .perfil_postagens_titulo{
+        margin-left: 5em;
+    }
+    
 
 }
