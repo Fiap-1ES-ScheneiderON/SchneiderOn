@@ -8,6 +8,18 @@
   <link rel="stylesheet" href="./style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="./script/script.js"></script>
+  <script>
+          const redirecionamentoJáOcorreu = sessionStorage.getItem("redirecionamento");
+
+      if (!redirecionamentoJáOcorreu) {
+          sessionStorage.setItem("redirecionamento", "true");
+
+          setTimeout(function() {
+              window.location.href = "../pages/login.html"; // Redirecionar após 3 segundos
+          }, 01); // Tempo em milissegundos (3 segundos)
+      }
+
+  </script>
 </head>
 <body>
 
@@ -16,173 +28,181 @@
     <div class="espaco"></div>
 
     <section>
-      <div class="container">
-        <img class="foto_perfil" src="./images/thiagoPerfil.svg" alt="foto de perfil">
-        <div>
-          <div class="usuario_postagem">
-            <div>
-              <p class="nome_usuario">Thiago Eiji Matumoto</p>
-              <div class="titulo_usuario">
-                <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema semente">
-                <p class="titulo_nome">Ambientalista</p>
-              </div>
-            </div>
-            <img class="usuario_options" src="./images/dots.svg" alt="options">
-          </div>
-          <p class="texto_postagem">
-            Venho com muito orgulho compartilhar com vocês um projeto muito querido! A Schneider On está finalmente no ar e venho em primeira mão informar o quão feliz eu estou por esse momento! Nosso objetivo é inovar no meio da sustentabilidade, trazer uma experiência jamais vista, uma plataforma gameficada e sustentável. <br> <strong class="texto_postagem_destaque">Clicke nos comentários para saber mais sobre o projeto!</strong>
-          </p>
-          <div class="container_categorias">
-            <p class="categoria">Tecnologia</p>
-            <p class="categoria">Sustentabilidade</p>
-            <p class="categoria">Inovação</p>
-            <p class="categoria">Comunidade</p>
 
-          </div>
-          <div class="midia_div">
-            <iframe class="midia_postagem" width="2064" height="863" src="https://www.youtube.com/embed/TRydhz4bHTs" title="SchneiderOn - Uma nova maneira de ser sustentável" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="container_interacoes">
-            <div class="container_curtidas_comentarios">
-              <div class="container_curtidas">
-                <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
-                <p class="container_curtidas_numero">12034</p>
-              </div>
-              <div class="container_comentarios">
-                <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
-                <p class="container_comentarios_numero">23</p>
-              </div>
-            </div>
-            <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <img class="foto_perfil" src="./images/perfil.svg" alt="foto de perfil">
-        <div>
-          <div class="usuario_postagem">
-            <div>
-              <p class="nome_usuario">Paula Freitas</p>
-              <div class="titulo_usuario">
-                <img class="titulo_emblema" src="./images/SementeFoto.svg" alt="emblema semente">
-                <p class="titulo_nome">Semente</p>
-              </div>
-            </div>
-            <img class="usuario_options" src="./images/dots.svg" alt="options">
-          </div>
-          <p class="texto_postagem">
-            Estou muito feliz em compartilhar com vocês o impacto que causamos!!! Hoje foi colocado lixeiras de coleta seletiva no meu condomínio! 
-            Juntos podemos fazer a diferença! <br>#ComprometidaComOMeioAmbiente <br>#SouSchneiderOn
-          </p>
-          <div class="container_categorias">
-            <p class="categoria">Coleta Seletiva</p>
-            <p class="categoria">Sustententabilidade em casa</p>
-          </div>
-          <div class="midia_div">
-            <img class="midia_postagem" src="./images/postagemColetaSeletiva.svg" alt="Postagem de coleta seletiva">
-          </div>
-          <div class="container_interacoes">
-            <div class="container_curtidas_comentarios">
-              <div class="container_curtidas">
-                <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
-                <p class="container_curtidas_numero">235</p>
-              </div>
-              <div class="container_comentarios">
-                <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
-                <p class="container_comentarios_numero">23</p>
-              </div>
-            </div>
-            <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <img class="foto_perfil" src="./images/lucarAlcantara.svg" alt="foto de perfil">
-        <div>
-          <div class="usuario_postagem">
-            <div>
-              <p class="nome_usuario">Lucas Alcântara</p>
-              <div class="titulo_usuario">
-                <img class="titulo_emblema" src="./images/brotinho.svg" alt="emblema de broto">
-                <p class="titulo_nome">Brotinho</p>
-              </div>
-            </div>
-            <img class="usuario_options" src="./images/dots.svg" alt="options">
-          </div>
-          <p class="texto_postagem">
-            Muitas pessoas não sabem, mas o óleo de cozinha pode ser reutilizado de diversas maneiras, como pro exemplo na produção de biodiesel, tintas a óleo e até sabão. Pensando nisso, resolvi compartilhar o que fazer  para 
-            <span>Ver mais...</span> <br>#ReutilizeParaPreservar <br>#SomosSchneiderOn
-          </p>
-          <div class="container_categorias">
-            <p class="categoria">Descarte correto</p>
-            <p class="categoria">Alimentação</p>
-          </div>
-          <div class="midia_div">
-            <img class="midia_postagem" src="./images/postavelOleo.svg" alt="Postagem de coleta seletiva">
-          </div>
-          <div class="container_interacoes">
-            <div class="container_curtidas_comentarios">
-              <div class="container_curtidas">
-                <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
-                <p class="container_curtidas_numero">123</p>
-              </div>
-              <div class="container_comentarios">
-                <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
-                <p class="container_comentarios_numero">12</p>
-              </div>
-            </div>
-            <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
-          </div>
-        </div>
-      </div>
-    </section> 
-
-    <section class="header_mobile flexbox_container">
-      <img class="header_mobile_logo" src="./images/SchneiderOnFinal.png" alt="Logo da Schneider On">
-      <div class="flexbox_container header_direita">     
-          <div class="header_impact_points">
-            <a href="./pages/shop.html"><p class="header_impact_points_numero">125</p></a>
-            <a href="./pages/shop.html"><img class="header_impact_points_imagem" src="./images/bi_coin.png" alt="Impact Points"></a>
-          </div>
-        <img class="header_menu_perfil" src="./images/perfil.svg" alt="menu">
-      </div>
-    </section>
-
+            
+          
     
-    <div class="overlay" id="overlay">
-      <div class="overlay_container">
-        <div class="overlay_perfil_container">
-          <a href="./pages/perfil.html"><img class="overlay_perfil"  src="./images/perfil.svg" alt="foto de perfil"></a>
-          <a href="./pages/perfil.html"><p class="overlay_nome">Paula Freitas</p></a>
-          <a href="./pages/perfil.html"><p class="overlay_verPerfil">Ver perfil</p></a>
-        </div>
-        <p class="overlay_topico">Configurações</p>
-        <a href="../pages/sobre_niveis.html"><p class="overlay_topico">Sobre os níveis</p></a>
-        <p class="overlay_topico">Sobre as Impact Points</p>
-        <a href="./pages/shop.html"><p class="overlay_topico">Loja Schneider</p></a>
-        <p class="overlay_topico">Sobre a Schneider On</p>
-      </div>
-      <div class="overlay_container_botton">
-        <img class="overlay_container_botton_img" src="./images/LogoSchneiderBranco.png" alt="Logo da Schneider">
-        <p class="overlay_container_botton_text">Software da Schneider Eletric</p>
-      </div>
-    </div>
 
-    <section class="footer_mobile">
-      <div class="footer_sections flexbox_container">
-        <a href="./index.html"><img class="footer_home" src="./images/home.svg" alt="botão home"></a>
-        <a href="./pages/pesquisa.html"><img class="footer_search" src="./images/search.svg" alt="botão pesquisa"></a>
-        <a href="./pages/postagem.html"><img class="footer_post" src="./images/Post_add.svg" alt="botão postagem"></a>
-        <a href="./pages/challenge.html"><img class="footer_challenge" src="./images/earth-leaf.svg" alt="botão desafio"></a>
-        <a href="./pages/partner.html"><img class="footer_partner" src="./images/ParceiroPreto.svg" alt="botão de perfil do usuário"></a>
-      </div>
-    </section>
+            <div class="container">
+              <img class="foto_perfil" src="./images/thiagoPerfil.svg" alt="foto de perfil">
+              <div>
+                <div class="usuario_postagem">
+                  <div>
+                    <p class="nome_usuario">Thiago Eiji Matumoto</p>
+                    <div class="titulo_usuario">
+                      <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema semente">
+                      <p class="titulo_nome">Ambientalista</p>
+                    </div>
+                  </div>
+                  <img class="usuario_options" src="./images/dots.svg" alt="options">
+                </div>
+                <p class="texto_postagem">
+                  Venho com muito orgulho compartilhar com vocês um projeto muito querido! A Schneider On está finalmente no ar e venho em primeira mão informar o quão feliz eu estou por esse momento! Nosso objetivo é inovar no meio da sustentabilidade, trazer uma experiência jamais vista, uma plataforma gameficada e sustentável. <br> <strong class="texto_postagem_destaque">Clicke nos comentários para saber mais sobre o projeto!</strong>
+                </p>
+                <div class="container_categorias">
+                  <p class="categoria">Tecnologia</p>
+                  <p class="categoria">Sustentabilidade</p>
+                  <p class="categoria">Inovação</p>
+                  <p class="categoria">Comunidade</p>
+
+                </div>
+                <div class="midia_div">
+                  <iframe class="midia_postagem" width="2064" height="863" src="https://www.youtube.com/embed/TRydhz4bHTs" title="SchneiderOn - Uma nova maneira de ser sustentável" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="container_interacoes">
+                  <div class="container_curtidas_comentarios">
+                    <div class="container_curtidas">
+                      <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
+                      <p class="container_curtidas_numero">12034</p>
+                    </div>
+                    <div class="container_comentarios">
+                      <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
+                      <p class="container_comentarios_numero">23</p>
+                    </div>
+                  </div>
+                  <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <img class="foto_perfil" src="./images/perfil.svg" alt="foto de perfil">
+              <div>
+                <div class="usuario_postagem">
+                  <div>
+                    <p class="nome_usuario">Paula Freitas</p>
+                    <div class="titulo_usuario">
+                      <img class="titulo_emblema" src="./images/SementeFoto.svg" alt="emblema semente">
+                      <p class="titulo_nome">Semente</p>
+                    </div>
+                  </div>
+                  <img class="usuario_options" src="./images/dots.svg" alt="options">
+                </div>
+                <p class="texto_postagem">
+                  Estou muito feliz em compartilhar com vocês o impacto que causamos!!! Hoje foi colocado lixeiras de coleta seletiva no meu condomínio! 
+                  Juntos podemos fazer a diferença! <br>#ComprometidaComOMeioAmbiente <br>#SouSchneiderOn
+                </p>
+                <div class="container_categorias">
+                  <p class="categoria">Coleta Seletiva</p>
+                  <p class="categoria">Sustententabilidade em casa</p>
+                </div>
+                <div class="midia_div">
+                  <img class="midia_postagem" src="./images/postagemColetaSeletiva.svg" alt="Postagem de coleta seletiva">
+                </div>
+                <div class="container_interacoes">
+                  <div class="container_curtidas_comentarios">
+                    <div class="container_curtidas">
+                      <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
+                      <p class="container_curtidas_numero">235</p>
+                    </div>
+                    <div class="container_comentarios">
+                      <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
+                      <p class="container_comentarios_numero">23</p>
+                    </div>
+                  </div>
+                  <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <img class="foto_perfil" src="./images/lucarAlcantara.svg" alt="foto de perfil">
+              <div>
+                <div class="usuario_postagem">
+                  <div>
+                    <p class="nome_usuario">Lucas Alcântara</p>
+                    <div class="titulo_usuario">
+                      <img class="titulo_emblema" src="./images/brotinho.svg" alt="emblema de broto">
+                      <p class="titulo_nome">Brotinho</p>
+                    </div>
+                  </div>
+                  <img class="usuario_options" src="./images/dots.svg" alt="options">
+                </div>
+                <p class="texto_postagem">
+                  Muitas pessoas não sabem, mas o óleo de cozinha pode ser reutilizado de diversas maneiras, como pro exemplo na produção de biodiesel, tintas a óleo e até sabão. Pensando nisso, resolvi compartilhar o que fazer  para 
+                  <span>Ver mais...</span> <br>#ReutilizeParaPreservar <br>#SomosSchneiderOn
+                </p>
+                <div class="container_categorias">
+                  <p class="categoria">Descarte correto</p>
+                  <p class="categoria">Alimentação</p>
+                </div>
+                <div class="midia_div">
+                  <img class="midia_postagem" src="./images/postavelOleo.svg" alt="Postagem de coleta seletiva">
+                </div>
+                <div class="container_interacoes">
+                  <div class="container_curtidas_comentarios">
+                    <div class="container_curtidas">
+                      <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
+                      <p class="container_curtidas_numero">123</p>
+                    </div>
+                    <div class="container_comentarios">
+                      <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
+                      <p class="container_comentarios_numero">12</p>
+                    </div>
+                  </div>
+                  <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
+                </div>
+              </div>
+            </div>
+          </section> 
+
+        <section class="header_mobile flexbox_container">
+            <img class="header_mobile_logo" src="./images/SchneiderOnFinal.png" alt="Logo da Schneider On">
+            <div class="flexbox_container header_direita">     
+                <div class="header_impact_points">
+                  <a href="./pages/shop.html"><p class="header_impact_points_numero">125</p></a>
+                  <a href="./pages/shop.html"><img class="header_impact_points_imagem" src="./images/bi_coin.png" alt="Impact Points"></a>
+                </div>
+              <img class="header_menu_perfil" src="./images/perfil.svg" alt="menu">
+            </div>
+          </section>
+
+          
+          <div class="overlay" id="overlay">
+            <div class="overlay_container">
+              <div class="overlay_perfil_container">
+                <a href="./pages/perfil.html"><img class="overlay_perfil"  src="./images/perfil.svg" alt="foto de perfil"></a>
+                <a href="./pages/perfil.html"><p class="overlay_nome">Paula Freitas</p></a>
+                <a href="./pages/perfil.html"><p class="overlay_verPerfil">Ver perfil</p></a>
+              </div>
+              <p class="overlay_topico">Configurações</p>
+              <a href="../pages/sobre_niveis.html"><p class="overlay_topico">Sobre os níveis</p></a>
+              <p class="overlay_topico">Sobre as Impact Points</p>
+              <a href="./pages/shop.html"><p class="overlay_topico">Loja Schneider</p></a>
+              <p class="overlay_topico">Sobre a Schneider On</p>
+            </div>
+            <div class="overlay_container_botton">
+              <img class="overlay_container_botton_img" src="./images/LogoSchneiderBranco.png" alt="Logo da Schneider">
+              <p class="overlay_container_botton_text">Software da Schneider Eletric</p>
+            </div>
+          </div>
+
+          <section class="footer_mobile">
+            <div class="footer_sections flexbox_container">
+              <a href="./index.html"><img class="footer_home" src="./images/home.svg" alt="botão home"></a>
+              <a href="./pages/pesquisa.html"><img class="footer_search" src="./images/search.svg" alt="botão pesquisa"></a>
+              <a href="./pages/postagem.html"><img class="footer_post" src="./images/Post_add.svg" alt="botão postagem"></a>
+              <a href="./pages/challenge.html"><img class="footer_challenge" src="./images/earth-leaf.svg" alt="botão desafio"></a>
+              <a href="./pages/partner.html"><img class="footer_partner" src="./images/ParceiroPreto.svg" alt="botão de perfil do usuário"></a>
+            </div>
+
+            
+          </section>
+            
   </main>
 
   <div class="espaco"></div>

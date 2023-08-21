@@ -13,7 +13,7 @@
 @import url(./sobre_niveis.css);
 @import url(./intro-infos.css);
 @import url(./intro2.css);
-
+@import url(./login.css);
 :root {
     --branco: #FFFFFF;
     --preto: #000000;           
