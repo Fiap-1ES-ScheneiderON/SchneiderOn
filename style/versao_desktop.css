@@ -14,8 +14,17 @@
 
 
     /* Registro */
-
-
+    .registro-desktop{
+        display: flex;
+    }
+    .registro-desktop img{
+        height: 35em;
+        width: 45em;
+    }
+    .registro-login{
+        margin-left: 50px;
+    }
+    
 
 
     /* Menu */
