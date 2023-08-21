@@ -1,0 +1,128 @@
+
+
+.container_registro {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Define a altura para ocupar a altura completa da viewport */
+  }
+  
+  .registro-intro-verde{
+    width: 95%;
+    margin-top: 3em;
+  }
+  
+  .card-registro{
+    background-color: #3CCB5B;                      
+    padding: 2.5em;
+    border-radius: 20px;
+    margin-top: 2em;
+    max-width: 100%;
+    
+  }
+  
+  .container_registro_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-items: start;
+    width: 100%;
+  }
+  
+  .registro_logo{
+    width: 15em;
+    margin-left: 1em;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  
+  
+  .container_registro_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-items: start;
+    width: 100%;
+  }
+  
+  .registro_logo{
+    max-width: 10em;
+    margin-left: 1em;
+  }
+  
+  .textfield-registro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0.7em 0px;
+  }
+  .textfield-registro > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--branco);
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box; 
+    
+  }
+  .textfield-registro > label{
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: var(--fonte_principal);
+    margin-top: 0.5em;
+  }
+  .textfield-registro > input::placeholder{
+  
+    color: rgb(0, 0, 0);
+    opacity: 0.6; 
+  
+  }
+  
+  .container_botoes-registro{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  
+  .registro{
+    padding: 0.5em 3em;
+    color: var(--branco);
+    font-family: Montserrat;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--verde1);
+  }
+  
+  .registro-texto{
+    color: var(--preto, #000);
+    
+    font-family: Montserrat;
+    font-size: smaller;
+    font-style: normal;
+    
+  }
+  
