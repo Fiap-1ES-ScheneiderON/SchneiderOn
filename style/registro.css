@@ -22,7 +22,9 @@
     max-width: 100%;
     
   }
-  
+  .form-select-registro{
+    margin: 10px;
+  }
   .container_registro_logo{
     display: flex;
     flex-direction: row;
