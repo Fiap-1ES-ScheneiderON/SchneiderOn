@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,40 +10,131 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="../script/script.js"></script>
 </head>
+
 <body>
   <!-- espaço para a barra não ficar em cima dos outros componentes  -->
   <div class="espaco"></div>
   <!-- código apartir daqui -->
 
 
+  <div id="container_postagem">
+    <div>
+      <div class="usuario_postagem">
+        <img class="foto_perfil" src="../images/perfil.svg" alt="foto de perfil">
+        <div>
+          <p class="nome_usuario"> Paula Freitas</p>
+          <div class="titulo_usuario">
+            <img class="titulo_emblema" src="../images/SementeFoto.svg" alt="emblema semente">
+            <p class="titulo_nome">Semente</p>
+          </div>
+          <div class="formulario_postagem">
+            <form>
+              <div id="assunto_container">
+                <select name="assunto" required="required" id="selecionar_assunto" onchange="put_subject(this)">
+                  <option value="">Assuntos</option>
+                  <option value="alimento">Alimentação</option>
+                  <option value="beleza">Beleza e Cuidados Pessoais</option>
+                  <option value="tecnologia">Tecnologia</option>
+                  <option value="educacao">Educação</option>
+                  <option value="negocio">Negócios</option>
+                  <option value="esporte">Esportes e Atividades ao Ar Livre</option>
+                  <option value="saude">Saúde e Bem-Estar</option>
+                  <option value="sustentabilidadeCasa">Sustentabilidade em casa</option>
+                  <option value="coletaSeletiva">Coleta Seletiva</option>
+                  <option value="ecologia">Ecologia</option>
+                  <option value="energia">Energia</option>
+                  <option value="sustentabilidade">Sustentabilidade</option>
+                </select>
+                <div id="assuntos_selecionados"></div>
+                <script>
+                  const selectElement = document.getElementById("selecionar_assunto");
+                  const container = document.getElementById("assuntos_selecionados");
+                  const selectedDivs = {}; // Armazena as divs selecionadas
+
+                  function put_subject(subject) {
+                    const selectedValue = subject.options[subject.selectedIndex].value;
+                    const selectedText = subject.options[subject.selectedIndex].text;
+
+                    if (selectedValue !== "none") {
+                      if (selectedDivs[selectedValue]) {
+                        // Se a div já estiver selecionada, remover ela
+                        container.removeChild(selectedDivs[selectedValue]);
+                        delete selectedDivs[selectedValue];
+                      } else {
+                        // Caso contrário, adicionar a div
+                        if (subject.options[subject.selectedIndex].value !== "") {
+                          const newDiv = document.createElement("p");
+                          newDiv.innerHTML = `${selectedText}`;
+                          newDiv.className = 'categoria'
+
+                          container.appendChild(newDiv);
+                          selectedDivs[selectedValue] = newDiv;
+                        }
+                      }
+                    }
+                  };
+                </script>
+              </div>
+              <div class="espaco_postagem"></div> <!-- espaço entre seleção dos assuntos e área de texto  -->
+              <textarea name="postar_assunto" placeholder="Iniciar um assunto ..." id="texto_assunto" cols="200"
+                rows="10"></textarea>
+              <div class="container_footer_postagem">
+                <table class="icones_postagem">
+                  <tr>
+                    <td><img src="../images/foto_postagem.svg" alt="Abrir camera"></td>
+                    <td><img src="../images/camera_postagem.svg" alt=""></td>
+                    <td><img src="../images/list_postagem.svg" alt="Abrir camera"></td>
+                    <td><img src="../images/mapa_postagem.svg" alt=""></td>
+                  </tr>
+                </table>
+                <div class="submit_alinhar"><button type="submit" class="submit_postagem">Enviar</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- não codar apartir daqui -->
-  <!-- espaço para a barra não ficar em cima dos outros componentes  -->
-  <div class="espaco"></div> 
   <section class="header_mobile flexbox_container">
     <img class="header_mobile_logo" src="../images/SchneiderOnFinal.png" alt="Logo da Schneider On">
     <div class="flexbox_container header_direita">
       <div class="header_impact_points">
-        <a href="../pages/shop.html"><p class="header_impact_points_numero">125</p></a>
-        <a href="../pages/shop.html"><img class="header_impact_points_imagem" src="../images/bi_coin.png" alt="Impact Points"></a>
+        <a href="../pages/shop.html">
+          <p class="header_impact_points_numero">125</p>
+        </a>
+        <a href="../pages/shop.html"><img class="header_impact_points_imagem" src="../images/bi_coin.png"
+            alt="Impact Points"></a>
       </div>
       <img class="header_menu_perfil" src="../images/perfil.svg" alt="menu">
     </div>
   </section>
 
-  
+
   <div class="overlay" id="overlay">
     <div class="overlay_container">
       <div class="overlay_perfil_container">
-        <a href="../pages/perfil.html"><img class="overlay_perfil"  src="../images/perfil.svg" alt="foto de perfil"></a>
-        <a href="../pages/perfil.html"><p class="overlay_nome">Paula Freitas</p></a>
-        <a href="../pages/perfil.html"><p class="overlay_verPerfil">Ver perfil</p></a>
+        <a href="../pages/perfil.html"><img class="overlay_perfil" src="../images/perfil.svg" alt="foto de perfil"></a>
+        <a href="../pages/perfil.html">
+          <p class="overlay_nome">Paula Freitas</p>
+        </a>
+        <a href="../pages/perfil.html">
+          <p class="overlay_verPerfil">Ver perfil</p>
+        </a>
       </div>
       <p class="overlay_topico">Configurações</p>
-      <a href="../pages/sobre_niveis.html"><p class="overlay_topico">Sobre os níveis</p></a>
-      <a href="../pages/sobre_impact_points.html"><p class="overlay_topico">Sobre as Impact Points</p></a>
-      <a href="../pages/shop.html"><p class="overlay_topico">Loja Schneider</p></a>
-      
+      <a href="../pages/sobre_niveis.html">
+        <p class="overlay_topico">Sobre os níveis</p>
+      </a>
+      <a href="../pages/sobre_impact_points.html">
+        <p class="overlay_topico">Sobre as Impact Points</p>
+      </a>
+      <a href="../pages/shop.html">
+        <p class="overlay_topico">Loja Schneider</p>
+      </a>
+
     </div>
     <div class="overlay_container_botton">
       <img class="overlay_container_botton_img" src="../images/LogoSchneiderBranco.png" alt="Logo da Schneider">
@@ -55,9 +147,11 @@
       <a href="../index.html"><img class="footer_home" src="../images/home-preto.svg" alt="botão home"></a>
       <a href="./pesquisa.html"><img class="footer_search" src="../images/search.svg" alt="botão pesquisa"></a>
       <a href="./postagem.html"><img class="footer_post" src="../images/Post_add.svg" alt="botão postagem"></a>
-      <a href="./challenge.html"><img class="footer_challenge" src="../images/earth-leaf.svg"alt="botão desafio"></a>
-      <a href="./partner.html"><img class="footer_partner" src="../images/ParceiroPreto.svg"alt="botão de parceiros"></a>
+      <a href="./challenge.html"><img class="footer_challenge" src="../images/earth-leaf.svg" alt="botão desafio"></a>
+      <a href="./partner.html"><img class="footer_partner" src="../images/ParceiroPreto.svg"
+          alt="botão de parceiros"></a>
     </div>
   </section>
 </body>
+
 </html>
