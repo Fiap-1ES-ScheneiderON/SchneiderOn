@@ -204,7 +204,7 @@
 .container_footer_postagem{
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px;
+  padding: 15px 15px;
 }
 table.icones_postagem{
   width: 10%;

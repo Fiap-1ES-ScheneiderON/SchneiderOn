@@ -1,0 +1,155 @@
+@media screen and (min-width: 920px){
+    /* Login desktop*/
+    .login-desktop{
+        display: flex;
+    }
+    .login-desktop img{
+        height: 30em;
+        width: 30em;
+    }
+    .card-login{
+        margin-left: 50px;
+    }
+
+
+
+    /* Registro */
+
+
+
+
+    /* Menu */
+    .overlay{
+        width: 20%;
+        height: 100%;
+    }
+
+
+
+    /* Home */
+    .container{
+        margin-right: 7em;
+        margin-left: 7em;
+        max-height: 650px;
+    }
+    .container p{
+        font-size: 15px;
+    }
+    .midia_div{
+        padding-bottom: 460px;
+    }
+    .midia_div img{
+        max-height: 450px;
+        max-width: 1100px;
+    }
+    .midia_div iframe{
+        max-height: 450px;
+        max-width: 1100px;
+    }
+    .overlayProjeto{
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+    .overlayProjeto p{
+        font-size: 15px;
+    }
+
+
+
+    /* Pesquisa */
+    .container_pesquisa_container{
+        max-width: 400px;
+    }
+    .banner_pesquisa{
+        padding: 0.800em 25em;
+    }
+    .banner_pesquisa::placeholder{
+        font-size: 0.900em;
+    }
+    .container_destaque{
+        padding-left: 10em;
+    }
+    .container_destaque p{
+        font-size: 15px;
+    }
+    .container_Assuntos{
+        padding-left: 10em;
+        padding-top: 1em;
+    }
+    .container_Assuntos p{
+        font-size: 15px;
+    }
+
+
+
+    /* Postagem */
+    #container_postagem p{
+        font-size: 15px;
+    }
+    .texto-assunto{
+        margin-right: 3em;
+    }
+    #assunto_container{
+        margin-right: 3em;
+    }
+    .submit_alinhar{
+        margin-top: 5px;
+        margin-right: 30px;
+    }
+
+
+
+    /* Challenge */
+    .challenge_container{
+        margin-left: 7em;
+        margin-right: 7em;
+        padding-bottom: 15px;
+    }
+    .challenge_container p{
+        font-size: 16px;
+    }
+    .weekly_challenge_desafio{
+        padding: 1em;
+    }
+    .monthly_challenge_imagem{
+        height: 250px;
+    }
+    .diversity_challenge_imagem{
+        height: 500px;
+    }
+
+
+
+    /* Parceiros */
+    .container_parceiros p{
+        font-size: 15px;
+    }
+    .paceiro_iniciativa_imagem{
+        height: 100px;
+    }
+    .iframe_empreendedorismo {
+        width: 60%;
+        height: 500px;
+    }
+    .parceiro_iniciativa_imagem {
+        width: 35%;
+        height: auto;
+        max-width: 100%;
+    }
+    .parceiro_iniciativa_pontos{
+        font-weight: 600;
+    }
+
+
+
+    /* Shopping */
+
+
+
+
+    /* Página de perfil */
+
+
+
+
+}
