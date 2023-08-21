@@ -12,8 +12,9 @@
 @import url(./intro.css);
 @import url(./sobre_niveis.css);
 @import url(./intro-infos.css);
-@import url(./intro2.css);
+@import url(./login.css);
 @import url(./projeto.css);
+@import url(./sobre_impact_points.css);
 
 :root {
     --branco: #FFFFFF;

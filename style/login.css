@@ -1,0 +1,125 @@
+
+
+.container_login {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Define a altura para ocupar a altura completa da viewport */
+}
+
+.login-intro-verde{
+  width: 95%;
+  margin-top: 3em;
+}
+
+.card-login{
+  background-color: #3CCB5B26;                      
+  padding: 2.5em;
+  border-radius: 20px;
+  margin-top: 2em;
+  max-width: 100%;
+  
+}
+
+.container_login_logo{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-items: start;
+  width: 100%;
+}
+
+.login_logo{
+  width: 15em;
+  margin-left: 1em;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+.container_login_logo{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-items: start;
+  width: 100%;
+}
+
+.introducao_logo{
+  max-width: 10em;
+  margin-left: 1em;
+}
+
+.textfield-login{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0.7em 0px;
+}
+.textfield-login > input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: var(--branco);
+  color: black;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;  
+}
+.textfield-login > label{
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: var(--fonte_principal);
+  margin-top: 0.5em;
+}
+.textfield-login > input::placeholder{
+
+  color: rgb(0, 0, 0);
+
+}
+
+.container_botoes-login{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.login{
+  padding: 0.5em 3em;
+  color: var(--branco);
+  font-family: Montserrat;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border-radius: 1em;
+  border: none;
+  background-color: var(--verde1);
+}
+
+.login-texto{
+  color: var(--preto, #000);
+  
+  font-family: Montserrat;
+  font-size: smaller;
+  font-style: normal;
+  
+}

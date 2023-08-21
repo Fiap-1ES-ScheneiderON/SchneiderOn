@@ -9,7 +9,18 @@
   <link rel="stylesheet" href="./style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="./script/script.js"></script>
+  <script>
+    const redirecionamentoJáOcorreu = sessionStorage.getItem("redirecionamento");
 
+    if (!redirecionamentoJáOcorreu) {
+      sessionStorage.setItem("redirecionamento", "true");
+
+      setTimeout(function () {
+        window.location.href = "../pages/intro.html"; // Redirecionar após 3 segundos
+      }, 1); // Tempo em milissegundos (3 segundos)
+    }
+
+  </script>
 </head>
 
 <body>
@@ -19,6 +30,7 @@
     <div class="espaco"></div>
 
     <section>
+
       <div class="container">
         <img class="foto_perfil" src="./images/thiagoPerfil.svg" alt="foto de perfil">
         <div>
@@ -108,12 +120,13 @@
               Após criarmos um design para o projeto, com o <strong>HTML, CSS e Bootstrap 5</strong> visto
               nas matérias de <strong>Front-End Design</strong> foi usado para a montagem das páginas e estilização do
               conteúdo! Fazendo o projeto sair do papel.<br>
-              Utilizando a <strong>Lógica de programação</strong> com <strong> Java Script</strong> conseguimos animar as nossas páginas do projeto, colocando vida e deixando mais dinâmico.<br>
+              Utilizando a <strong>Lógica de programação</strong> com <strong> Java Script</strong> conseguimos animar
+              as nossas páginas do projeto, colocando vida e deixando mais dinâmico.<br>
             </p>
           </div>
         </div>
 
-
+        <!--Thiago Eiji-->
         <div class="overlayProjeto_comentario">
           <img class="overlayProjeto_foto_perfil" src="./images/thiagoPerfil.svg" alt="foto de perfil">
           <div class="overlayProjeto_comentario_container">
@@ -133,15 +146,78 @@
             </div>
             <p class="overlayProjeto_comentario_texto">
               <strong>Minhas atribuições dentro da Schneider On:</strong><br>
-              Designer <br>
+              UI/UX Designer <br>
               Product Owner <br>
               Scrum Master <br>
               Desenvolvedor Front-End <br>
+              Desenvolvimento e edição do Pitch <br>
+              QA <br>
             </p>
           </div>
         </div>
 
-        
+        <!--Mayara Moura-->
+        <div class="overlayProjeto_comentario">
+          <img class="overlayProjeto_foto_perfil" src="./images/perfilMayara" alt="foto de perfil">
+          <div class="overlayProjeto_comentario_container">
+            <div class="overlayProjeto_comentario_usuario">
+              <div>
+                <p class="nome_usuario">Mayara Moura</p>
+                <div class="titulo_usuario">
+                  <img class="titulo_emblema" src="./images/ecologista.png" alt="emblema ecologista">
+                  <p class="titulo_nome">Ecologista</p>
+                </div>
+              </div>
+              <div class="overlayProjeto_curtidas">
+                <img class="overlayProjeto_curtidas_icon" id="curtidaOverlay" src="./images/curtida.svg"
+                  alt="curtida da página">
+                <p class="overlayProjeto_curtidas_numero">40</p>
+              </div>
+            </div>
+            <p class="overlayProjeto_comentario_texto">
+              <strong>Minhas atribuições dentro da Schneider On:</strong><br>
+              Desenvolvedora Front-End <br>
+              Desenvolvimento e apresentação Pitch <br>
+              UI/UX Designer <br>
+              Processo criativo <br>
+          
+            </p>
+          </div>   
+        </div>
+
+        <!--Gabriel Maia-->
+        <div class="overlayProjeto_comentario">
+          <img class="overlayProjeto_foto_perfil" src="./images/PerfilGabriel.jpg" alt="foto de perfil">
+          <div class="overlayProjeto_comentario_container">
+            <div class="overlayProjeto_comentario_usuario">
+              <div>
+                <p class="nome_usuario">Gabriel Alves Maia Rodrigues</p>
+                <div class="titulo_usuario">
+                  <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema semente">
+                  <p class="titulo_nome">Ambientalista</p>
+                </div>
+              </div>
+              <div class="overlayProjeto_curtidas">
+                <img class="overlayProjeto_curtidas_icon" id="curtidaOverlay" src="./images/curtida.svg"
+                  alt="curtida da página">
+                <p class="overlayProjeto_curtidas_numero">99</p>
+              </div>
+            </div>
+            <p class="overlayProjeto_comentario_texto">
+              <strong>Minhas atribuições dentro da Schneider On:</strong><br>
+              UI/UX Designer <br>
+              Desenvolvedor Front-End <br>
+              Apresentação Pitch <br>
+              Processo criativo <br>
+              Design thinking <br>
+              
+            </p>
+          </div>
+        </div>
+
+
+        </div>
+
       </div>
     </div>
 
@@ -258,7 +334,7 @@
           </a>
         </div>
         <p class="overlay_topico">Configurações</p>
-        <a href="./pages/sobre_niveis.html">
+        <a href="../pages/sobre_niveis.html">
           <p class="overlay_topico">Sobre os níveis</p>
         </a>
         <p class="overlay_topico">Sobre as Impact Points</p>
@@ -283,7 +359,10 @@
         <a href="./pages/partner.html"><img class="footer_partner" src="./images/ParceiroPreto.svg"
             alt="botão de perfil do usuário"></a>
       </div>
+
+
     </section>
+
   </main>
 
   <div class="espaco"></div>
