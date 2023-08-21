@@ -212,3 +212,11 @@ table.icones_postagem{
 .espaco_postagem{
   height: 1.1875rem;
 }
+
+#assuntos_selecionados{
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
