@@ -9,12 +9,14 @@
 @import url(./menu.css);
 @import url(./shop.css);
 @import url(./login.css);
+@import url(./registro.css);
 @import url(./intro.css);
 @import url(./sobre_niveis.css);
 @import url(./intro-infos.css);
 @import url(./login.css);
 @import url(./projeto.css);
 @import url(./sobre_impact_points.css);
+@import url(./versao_desktop.css);
 
 :root {
     --branco: #FFFFFF;
