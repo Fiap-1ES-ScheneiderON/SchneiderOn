@@ -43,23 +43,23 @@
 }
 
 .perfil_semente_nome {
-  color: var(--verde-4, #87D300);
+  color: var(--verde2);
   text-align: center;
   font-family: Montserrat;
   font-size: 1em;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: normal;
   margin-right: 0.7em;
 }
 
 .perfil_semente_nivel {
-  color: rgba(135, 211, 0, 0.59);
+  color: var(--verde2);
   text-align: center;
   font-family: Montserrat;
   font-size: 1em;
   font-style: normal;
-  font-weight: 700;
+  font-weight:300;
   line-height: normal;
 }
 

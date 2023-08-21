@@ -1,0 +1,36 @@
+.content-section h2 {
+    margin-top: 1em;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+}   
+.content-section h2 span{
+    color: var(--verde1);     
+}
+.container-desafios {
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #3CCB5B26;
+    border-radius: 10px;
+}
+.container-interno{
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+.img-desafios{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 15px;
+}
+.div_desafios{
+    padding: 25px;
+}
+.div_desafios span{
+    color: var(--verde1);
+    font-weight: bolder;
+}
+.div_desafios p{
+    font-weight: 400;
+}

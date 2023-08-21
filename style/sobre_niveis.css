@@ -1,0 +1,57 @@
+.container-niveis {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3CCB5B26;
+    border-radius: 10px;
+}
+.container-interno{
+    margin-bottom: 35px;
+}
+.img-niveis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+.infos-niveis-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.content-section h2 {
+    margin-top: 1em;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.content-section h2 span{
+    color: var(--verde1);
+
+}
+
+.div-flex-niveis {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+}
+.div-flex-niveis img{
+    height: 100px;
+}
+
+.div-flex-niveis span{
+    font-weight: bolder;
+    color: #3CCB5B;
+}
+
+.div_nivel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
