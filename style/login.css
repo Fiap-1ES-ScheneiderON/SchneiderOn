@@ -1,0 +1,121 @@
+
+
+.container_login {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  justify-content: center;
+  align-items: center;
+  height: 95vh; /* Define a altura para ocupar a altura completa da viewport */
+}
+
+.login-intro-verde{
+  width: 95%;
+  
+}
+
+.card-login{
+            
+  background-color: var(--verde1);                      
+  padding: 25px 25px;
+  border-radius: 20px;
+  
+  
+}
+
+.container_login_logo{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-items: start;
+  width: 100%;
+}
+.login_logo{
+  width: 15em;
+  margin-left: 1em;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+
+
+.container_login_logo{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-items: start;
+  width: 100%;
+}
+.introducao_logo{
+  width: 10em;
+  margin-left: 1em;
+}
+
+.textfield-login{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.textfield-login > input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: var(--branco);
+  color: black;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;  
+}
+.textfield-login > label{
+  color: #000000;
+  margin-bottom: 10px;
+
+}
+.textfield-login > input::placeholder{
+
+  color: rgb(0, 0, 0);
+
+}
+
+.container_botoes-login{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.login{
+  padding: 0.5em 3em;
+  color: var(--branco);
+  font-family: Montserrat;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border-radius: 1em;
+  border: none;
+  background-color: var(--verde1);
+}
+
+.login-texto{
+  color: var(--preto, #000);
+  
+  font-family: Montserrat;
+  font-size:smaller;
+  font-style: normal;
+    
+}

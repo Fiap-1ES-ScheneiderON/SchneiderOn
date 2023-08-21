@@ -9,6 +9,10 @@
   height: 90vh; /* Define a altura para ocupar a altura completa da viewport */
 }
 
+.login-intro-verde{
+  width: 95%;
+  
+}
 
 .swiper {
   width: 100%;
