@@ -156,10 +156,27 @@
   font-weight: 700;
 }
 
+
+
+
+
+
+/* página de postagem */
+
+
+
 #container_postagem {
   margin: 1em;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.container_postagem_usuario{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-bottom: 1em;
 }
 
 .formulario_postagem {
@@ -193,13 +210,20 @@
 }
 
 .submit_postagem{
-  border-radius: 8px ;
-  background: var(--verde-1, #3CCB5B); 
-  outline: none;
-  border-color: var(--verde-1, #3CCB5B); 
+  color: #FFF;
+  font-family: var(--fonte_principal);
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.5rem;
+  border: none;
+  background: var(--verde-1, #3CCB5B);
+  padding: 0.3em 1em;
 }
 .submit_alinhar{
   margin-left: auto;
+
 }
 .container_footer_postagem{
   display: flex;
@@ -219,4 +243,8 @@ table.icones_postagem{
   align-items: center;
   flex-wrap: wrap;
   gap: 0.6em;
+}
+
+.icones_postagem_action{
+  margin-left: 0.5em;
 }

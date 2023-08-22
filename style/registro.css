@@ -15,15 +15,17 @@
   }
   
   .card-registro{
-    background-color: #3CCB5B;                      
+    background-color: #3CCB5B26;                      
     padding: 2.5em;
     border-radius: 20px;
+    margin: 1em;
     margin-top: 2em;
     max-width: 100%;
-    
+
   }
   .form-select-registro{
     margin: 10px;
+    padding: 0.3em 0.7em;
   }
   .container_registro_logo{
     display: flex;
@@ -104,6 +106,7 @@
     flex-direction: column;
     gap: 1em;
     align-items: center;
+    margin-top: 1em;
   }
   
   .registro{
