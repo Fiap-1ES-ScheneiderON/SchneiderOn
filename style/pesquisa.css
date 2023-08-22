@@ -87,3 +87,8 @@
   font-weight: 400;
   line-height: normal;
 }
+.pesquisa_desktop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

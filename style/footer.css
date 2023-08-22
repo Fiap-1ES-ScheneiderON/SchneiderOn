@@ -18,6 +18,14 @@
   padding: 0px;
 }
 
+.flexbox_container_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
 .footer_sections{
   margin: 1em 2em;
 }

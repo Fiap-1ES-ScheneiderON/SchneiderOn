@@ -1,34 +1,39 @@
-@media screen and (min-width: 920px){
+@media screen and (min-width: 680px) {
+
     /* Login desktop*/
-    .login-desktop{
+    .login-desktop {
         display: flex;
     }
-    .login-desktop img{
+
+    .login-desktop img {
         height: 30em;
         width: 30em;
     }
-    .card-login{
+
+    .card-login {
         margin-left: 50px;
     }
 
 
 
     /* Registro */
-    .registro-desktop{
+    .registro-desktop {
         display: flex;
     }
-    .registro-desktop img{
+
+    .registro-desktop img {
         height: 35em;
         width: 45em;
     }
-    .registro-login{
+
+    .registro-login {
         margin-left: 50px;
     }
-    
+
 
 
     /* Menu */
-    .overlay{
+    .overlay {
         width: 20%;
         height: 100%;
     }
@@ -36,136 +41,272 @@
 
 
     /* Home */
-    .container{
+    #desktop_index{
+        width: 100%;
+        max-width: 1080px;
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header_mobile div{
+        max-width: 1080px;
+    }
+
+    .container {
         margin-right: 7em;
         margin-left: 7em;
-        max-height: 650px;
     }
-    .container p{
+
+    .container p {
         font-size: 15px;
     }
-    .midia_div{
+
+    .midia_div {
         padding-bottom: 460px;
     }
-    .midia_div img{
+
+    .midia_div img {
         max-height: 450px;
         max-width: 1100px;
     }
-    .midia_div iframe{
+
+    .midia_div iframe {
         max-height: 450px;
         max-width: 1100px;
     }
-    .overlayProjeto{
+
+    .overlayProjeto {
         margin-left: 7em;
         margin-right: 7em;
     }
-    .overlayProjeto p{
+
+    .overlayProjeto p {
         font-size: 15px;
     }
 
 
 
     /* Pesquisa */
-    .container_pesquisa_container{
+    .pesquisa_desktop{
+        width: 100%;
+        max-width: 1080px;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container_pesquisa_container {
         max-width: 400px;
     }
-    .banner_pesquisa{
+
+    .banner_pesquisa {
         padding: 0.800em 25em;
     }
-    .banner_pesquisa::placeholder{
+
+    .banner_pesquisa::placeholder {
         font-size: 0.900em;
     }
-    .container_destaque{
+
+    .container_destaque {
         padding-left: 10em;
     }
-    .container_destaque p{
+
+    .container_destaque p {
         font-size: 15px;
     }
-    .container_Assuntos{
+
+    .container_Assuntos {
         padding-left: 10em;
         padding-top: 1em;
     }
-    .container_Assuntos p{
+
+    .container_Assuntos p {
         font-size: 15px;
     }
 
 
 
     /* Postagem */
-    #container_postagem p{
+    #container_postagem{
+        width: 100%;
+        max-width: 1080px;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #container_postagem p {
         font-size: 15px;
     }
-    .texto-assunto{
+
+    .texto-assunto {
         margin-right: 3em;
     }
-    #assunto_container{
+
+    #assunto_container {
         margin-right: 3em;
     }
-    .submit_alinhar{
+
+    .submit_alinhar {
         margin-top: 5px;
         margin-right: 30px;
+    }
+
+    .submit_postagem{
+        font-size: 15px;
     }
 
 
 
     /* Challenge */
-    .challenge_container{
+    .challenge_container {
         margin-left: 7em;
         margin-right: 7em;
         padding-bottom: 15px;
+        max-width: 1080px;
     }
-    .challenge_container p{
+
+
+    .challenge_desktop{
+        width: 100%;
+        max-width: 1080px;
+        position: absolute;
+        top: 115%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .monthly_challenge_texto, .diversity_challenge_texto, .categoria, .weekly_challenge_texto {
         font-size: 16px;
     }
-    .weekly_challenge_desafio{
+
+    .challenge_titulo{
+        font-size: 28px;
+    }
+    .challenge_logo{
+        width: 7.5em;
+    }
+
+    .weekly_challenge_desafio {
         padding: 1em;
     }
-    .monthly_challenge_imagem{
+
+    .monthly_challenge_imagem {
         height: 250px;
     }
-    .diversity_challenge_imagem{
+
+    .diversity_challenge_imagem {
         height: 500px;
     }
+
 
 
 
     /* Parceiros */
-    .container_parceiros p{
+    .container_parceiros{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 9em;
+    }
+
+
+    .parceiro_titulo, .parceiro_titulo_span{
+        font-size: 26px;
+    }
+
+    .parceiro_iniciativa_texto {
         font-size: 15px;
     }
-    .paceiro_iniciativa_imagem{
+
+    .paceiro_iniciativa_imagem {
         height: 100px;
     }
+
     .iframe_empreendedorismo {
         width: 60%;
         height: 500px;
     }
+
     .parceiro_iniciativa_imagem {
         width: 35%;
         height: auto;
         max-width: 100%;
     }
-    .parceiro_iniciativa_pontos{
+
+    .parceiro_iniciativa_pontos {
         font-weight: 600;
     }
 
 
 
     /* Shopping */
-    .container_loja p{
+    .container_loja{
+        width: 100%;
+        max-width: 1080px;
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .loja_intro {
         font-size: 18px;
     }
 
+    .loja_titulo , .loja_titulo_destaque{
+        font-size:  28px;
+    }
 
 
     /* Página de perfil */
-    .container_perfil{
+    .desktop_perfil{
+        width: 100%;
+        max-width: 1080px;
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container_perfil {
         margin-left: 8em;
         margin-right: 6em;
     }
-    .perfil_postagens_titulo{
+
+    .perfil_postagens_titulo {
         margin-left: 5em;
     }
-    
+
+}
+
+@media screen and (min-width: 1080px){
+
+    .footer_sections{
+        margin: 1em 3em;
+    }
+
+}
+
+@media screen and (min-width: 1380px){
+
+    .footer_sections{
+        margin: 1em 6em;
+    }
+
+}
+
+@media screen and (min-width: 1680px){
+
+    .footer_sections{
+        margin: 1em 10em;
+    }
 
 }
