@@ -285,6 +285,26 @@
         margin-left: 5em;
     }
 
+
+    /* sobre os niveis */
+    .container-niveis{
+        width: 100%;
+        max-width: 890px;
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container-desafios{
+        width: 100%;
+        max-width: 890px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 }
 
 @media screen and (min-width: 1080px){
