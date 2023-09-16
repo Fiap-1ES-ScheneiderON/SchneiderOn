@@ -137,6 +137,7 @@
         top: 37%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin: 16px 100px;
     }
 
     #container_postagem p {
@@ -255,6 +256,7 @@
         top: 66%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin: 10px 100px;
     }
 
     .loja_intro {
