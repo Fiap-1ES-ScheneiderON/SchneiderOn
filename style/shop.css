@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 0.5em;
-  background-color: rgba(60, 203, 91, 0.36);
+  
   padding: 0.3em 1em;
   border-radius: 0.4em;
   width: 60%;
@@ -86,4 +86,20 @@
 
 .loja_item_impact_points{
   width: 1.2em;
+}
+.loja_resgatar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  background-color: rgba(60, 203, 91, 0.36);
+  padding: 0.3em 1em;
+  border-radius: 0.4em;
+  width: 60%;
+  margin-right: 0.4em;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
