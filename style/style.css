@@ -44,3 +44,22 @@ body {
 .espaco{
     height: 4.1875rem;
 }
+
+.titulo_home{
+    color: var(--preto, #000);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.45rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.titulo_home_destaque{
+    color: var(--verde1, #3CCB5B);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.45rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal
+}
