@@ -15,10 +15,11 @@
   <main>
 
     <section class="container_introducao">
-      <div class="container_introducao_logo">
-        <img class="introducao_logo" src="../images/SchneiderOnFinal.png" alt="">
+      <div class="container_introducao_logo_mobile">
+        <img class="introducao_logo_mobile" src="../images/SchneiderOnFinal.png" alt="">
       </div>
-      <div class="swiper mySwiper">
+
+      <div class="swiper mySwiper container_introducao_flex_1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="introducao_slide">
@@ -59,6 +60,7 @@
           </div>
 
         </div>
+        <div class="swiper-pagination"></div>
       </div>
 
       <div class="container_botoes">
@@ -66,8 +68,31 @@
         <a href="../pages/login.html"><button class="log_in">Log In</button></a>
       </div>
 
-      <div class="swiper-pagination"></div>
+
+      <div class="container_login_desktop container_introducao_flex_2">
+        <div class="login_desktop_logo">
+          <img class="login_desktop_logo_img" src="../images/SchneiderOnFinal.png" alt="">
+        </div>
+
+        <div class="login_desktop_filds">
+          <div class="login_desktop_login">
+            <label for="usuario"> Usuário </label>
+            <input type="text" name="usuario" placeholder="paula.freitas@Schneider.com.br">
+          </div>
+          <div class="login_desktop_login">
+              <label for="senha"> Senha </label>
+              <input type="password" name="senha" placeholder="@MoSustentabilidade">
+          </div>
+          <div class="login_desktop_login">
+              <label class="login_desktop_texto"><input type="checkbox">Lembre-me</label>
+          </div>
+          <div class="login_desktop_botoes_login">
+              <a href="../index.html"><button class="log_in">Log In</button></a>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
     <script type='text/javascript'></script>
 
