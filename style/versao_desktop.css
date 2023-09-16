@@ -330,3 +330,28 @@
     }
 
 }
+
+/* tela de login desktop */
+@media screen and (min-width: 1220px){
+    .container_introducao_logo_mobile, .introducao_logo_mobile, .container_botoes{
+        display: none;
+    }
+    .container_introducao{
+        flex-direction: row;
+    }
+    .introducao_texto_texto_container{
+        margin-left: 16em;
+        margin-right: 16em;
+    }
+    .container_introducao_flex_1{
+        flex:3;
+    }
+    .container_introducao_flex_2{
+        flex:2;
+    }
+}
+@media screen and (max-width: 1220px){
+    .container_login_desktop{
+        display: none;
+    }
+}
