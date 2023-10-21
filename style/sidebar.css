@@ -1,106 +1,105 @@
-.sidebar{
-    display: none;
+#sidebar {
+    position: fixed;
+    width: 33rem;
+    height: 100vh;
+    padding: 2rem;
+    border-right: 0.1rem solid #D9D9D9;
 }
-@media screen and (min-width: 1280px){
-    .header_mobile{
-        display: none;
-    }
-    .overlay{
-        display: none;
-    }
-    .footer_mobile{
-        display: none;
-    }
-    .nivel-sidebar{
-        height: 16px;
-    }
-    .sidebar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 200px;
-        height: 100%;
-        padding: 40px 10px 30px 10px;
-        border-right: 1px solid  #2f3336;
-        transition: 0.2s;
-    }
-    #desktop_index{
-        margin-left: 50px;
-    }
-    .sidebar-header{
-        width: 100%;
-        margin-bottom: 16px;
-    }
-    .header_impact_points_imagem{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .container-nivel-sidebar{
-        margin-left: 12px;
-    }
-    .semente-sidebar{
-        color: #009530;
-        font-size: 14px;
-    }
-    .btn-verperfil{
-        margin-left: 40px;
-    }
-    .logo-img{
-        width: 35px;
-        margin-left: 10px;
-        min-height: 35px;
-        border-radius: 50%;
-        object-fit: cover;
-        transition: transform 0.4s;
-    }
-    .logo-img:hover{
-        transform: scale(2,2);
-    
-    }
-    .sidebar button{
-        height: 60px;
-        background: transparent;
-        border: 0;
-        font-family: inherit;
-        color: inherit;
-        cursor: pointer;
-        text-align: left;
-        padding: 0;
-    }
-    .sidebar button > span {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        height: 48px;
-        padding: 0 16px 0 12px;
-        border-radius: 24px;
-        line-height: 1;
-        transition: all 0.2s;
-    }
-    .sidebar button:hover > span{
-        background: rgba(0, 0, 0, 0.1)
-    }
-    .sidebar button img{
-        position: relative;
-        font-size: 28px;
-        transition: 0.2s;
-    }
-    .sidebar button span{
-        font-size: 16px;
-    }
-    .sidebar > nav{
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .btn-infos button{
-        height: 47px;
-    }
-    .espaço{
-        display: none;
-    }
+
+#sidebar nav {
+    margin: 9.6rem 0 24rem 0;
+}
+
+#sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+}
+
+#sidebar .menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding-left: 1.2rem;
+    font-weight: bold;
+}
+
+#sidebar .menuItem img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+#sidebar #sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#sidebar #sidebar-footer a {
+    font-family: var(--fonte-principal);
+    border-radius: 5.2rem;
+    border: none;
+    text-align: center;
+}
+
+#sidebar #sidebar-footer #new-post {
+    padding: 2.1rem 10rem;
+    background-color: var(--verde1);
+    font-weight: bold;
+    color: #FFF;
+}
+
+#sidebar #sidebar-footer #profile-settings {
+    background-color: #F4FFDF;
+    border: 1px solid var(--verde2);
+    font-weight: bold;
+    color: #000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-block: 1.2rem;
+}
+
+#sidebar #sidebar-footer #profile-settings img#profile {
+    border-radius: 4rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+#sidebar #sidebar-footer #profile-settings #info {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#sidebar #sidebar-footer #profile-settings #info #level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+#sidebar #sidebar-footer #profile-settings #info #level img{
+    width: 2rem;
+    height: 1.8rem;
+}
+
+#sidebar #sidebar-footer #profile-settings #info #level span{
+    color: var(--verde1);
+}
+
+#sidebar #sidebar-footer #profile-settings #coins {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#sidebar #sidebar-footer #profile-settings #coins img {
+    border-radius: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
 }
