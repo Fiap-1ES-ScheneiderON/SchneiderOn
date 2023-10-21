@@ -31,10 +31,14 @@
     --peso_texto: '400';
     --peso_nome: '500';
     --peso_desafio: '700';
+
+    font-size: 62.5%;
+    /* 1rem = 10px */
 }
 
 body {
     font-family: var(--fonte_principal);
+    font-size: 1.6rem;
     font-weight: 400;
     background-color: var(--branco);
 

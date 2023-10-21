@@ -9,102 +9,11 @@
   <link rel="stylesheet" href="../style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="../script/perfil.js"></script>
+  <script src="/script/siderBar.js" defer></script>
 </head>
 
 <body>
-  <aside class="sidebar">
-    <header class="sidebar-header">
-      <img class="logo-img" src="../images/perfil.svg" alt="Foto de perfil">
-      <span>Paula Freitas</span><br>
-      <div class="container-nivel-sidebar">
-      <span>
-        <img class="nivel-sidebar" src="../images/SementeFoto.svg" alt="nível de perfil">
-        <span class="semente-sidebar">Semente</span><br>
-      </div>
-      <div class="header_impact_points">
-        <a href="./pages/shop.html"><img class="header_impact_points_imagem" src="../images/bi_coin.png"
-          alt="Impact Points"></a>
-        <a href="./pages/shop.html">
-          <p class="header_impact_points_numero">125</p>
-        </a>
-      </div>
-      </span>
-      <a href="../pages/perfil.html">
-        <button class="btn-verperfil">
-        <span>Ver perfil</span>
-      </button>
-      </a>
-    </header>
-    <nav>
-      
-      <a href="../index.html">
-        <button>
-        <span>
-          <img src="../images/home-preto.svg" alt="Página inicial">
-          <span>Página inicial</span>
-        </span>
-        </button>
-      </a>
-      <a href="../pages/pesquisa.html">
-        <button>
-          <span>
-            <img src="../images/search.svg" alt="Pesquisar">
-            <span>Pesquisar</span>
-          </span>
-        </button>
-      </a>
-      <a href="../pages/postagem.html">
-        <button>
-          <span>
-            <img src="../images/post-add.svg" alt="Postagem">
-            <span>Nova postagem</span>
-          </span>
-        </button>
-      </a>
-      <a href="../pages/challenge.html">
-        <button>
-          <span>
-            <img src="../images/earth-leaf.svg" alt="Challenge">
-            <span>Challenge</span>
-          </span>
-        </button>
-      </a>
-      <a href="../pages/partner.html">
-        <button>
-          <span>
-            <img src="../images/ParceiroPreto.svg" alt="Parceiros">
-            <span>Parceiros</span>
-          </span>
-        </button>
-      </a>
-      <div class="btn-infos">
-        <a href="../pages/shop.html">
-          <button>
-            <span>
-              <span>Loja SchneiderOn</span>
-            </span>
-          </button>
-        </a>
-        <a href="../pages/sobre_niveis.html">
-          <button>
-            <span>
-              <span>Níveis</span>
-            </span>
-          </button>
-        </a>
-        <a href="../pages/sobre_impact_points.html">
-          <button>
-            <span>
-              <span>Impact Points</span>
-            </span>
-          </button>
-        </a>
-      </div>
-    </nav>
-    <div class="sidebar-footer"></div>
-    
-  </aside>
-
+  <div id="sidebar"></div>
   <main>
     <!-- espaço para a barra não ficar em cima dos outros componentes  -->
     <div class="espaco"></div>
@@ -190,23 +99,6 @@
       <div class="espaco"></div> 
     </div>
 
-    <!-- não codar apartir daqui -->
-    <!-- espaço para a barra não ficar em cima dos outros componentes  -->
-    <section class="header_mobile flexbox_container_header">
-      <img class="header_mobile_logo" src="../images/SchneiderOnFinal.png" alt="Logo da Schneider On">
-      <div class="flexbox_container_header header_direita">
-        <div class="header_impact_points">
-          <a href="../pages/shop.html">
-            <p class="header_impact_points_numero">125</p>
-          </a>
-          <a href="../pages/shop.html"><img class="header_impact_points_imagem" src="../images/bi_coin.png"
-              alt="Impact Points"></a>
-        </div>
-        <img class="header_menu_perfil" src="../images/perfil.svg" alt="menu">
-      </div>
-    </section>
-
-
     <div class="overlay" id="overlay">
       <div class="overlay_container">
         <div class="overlay_perfil_container">
@@ -234,17 +126,6 @@
         <p class="overlay_container_botton_text">Software da Schneider Eletric</p>
       </div>
     </div>
-    <section class="footer_mobile">
-      <div class="footer_sections flexbox_container_footer">
-        <a href="../index.html"><img class="footer_home" src="../images/home-preto.svg" alt="botão home"></a>
-        <a href="./pesquisa.html"><img class="footer_search" src="../images/search.svg" alt="botão pesquisa"></a>
-        <a href="./postagem.html"><img class="footer_post" src="../images/Post_add.svg" alt="botão postagem"></a>
-        <a href="./challenge.html"><img class="footer_challenge" src="../images/earth-leaf.svg" alt="botão desafio"></a>
-        <a href="./partner.html"><img class="footer_partner" src="../images/ParceiroPreto.svg"
-            alt="botão de parceiros"></a>
-      </div>
-    </section>
-
   </main>
 
 </body>
