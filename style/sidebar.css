@@ -7,7 +7,7 @@
 }
 
 #sidebar nav {
-    margin: 9.6rem 0 24rem 0;
+    margin: 9.6rem 0 10rem 0;
 }
 
 #sidebar nav ul {
@@ -21,10 +21,14 @@
     align-items: center;
     justify-content: flex-start;
     gap: 1.2rem;
-    padding-left: 1.2rem;
+    padding: 1.2rem;
     font-weight: bold;
+    border-radius: 5.2rem
 }
 
+#sidebar .menuItem.selected {
+    background-color: #F4FFDF;
+}
 #sidebar .menuItem img {
     width: 2.4rem;
     height: 2.4rem;

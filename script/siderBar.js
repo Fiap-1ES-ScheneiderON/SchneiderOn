@@ -55,11 +55,12 @@ function createNavBar() {
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
 
-  navItems.forEach((item) => {
+  navItems.forEach(item => {
     const li = document.createElement("li");
+    const selected = window.location.pathname.includes(item.link)
 
     li.innerHTML = `
-        <a href="${item.link}" class="menuItem">
+        <a href="${item.link}" class="menuItem ${selected && "selected"}" alt="${item.text}">
             <img src=${item.icon} />
             <span>${item.text}</span>
         </a>
