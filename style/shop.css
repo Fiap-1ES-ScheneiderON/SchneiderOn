@@ -8,18 +8,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: .4rem;
+  gap: 0.4rem;
   position: relative;
 }
 
 .shop-item::before {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1.2rem;
   width: 26rem;
   height: 22rem;
-  background-color: #A8F0AF;
+  border-radius: 0px 0px 10px 10px;
+  background: #a8f0af;
+  box-shadow: -1px 80px 19px 272px rgba(255, 255, 255, 0.6) inset;
 }
 
 .shop-item img {
@@ -33,7 +35,7 @@
 
 .shop-item a {
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   border-radius: 5.2rem;
   background-color: var(--verde1);
   padding: 1.2rem 5.2rem;
