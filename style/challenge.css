@@ -80,8 +80,7 @@
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
-
-  background-color: #a8f0af;;
+  background: rgba(60, 203, 91, 0.25);
   border-radius: .8rem;
   padding: .8rem 1.2rem;
 }

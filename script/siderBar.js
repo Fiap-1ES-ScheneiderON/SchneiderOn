@@ -17,7 +17,7 @@ const navItems = [
   },
   {
     text: "Iniciativas Scheneider",
-    link: "/pages/partner.html",
+    link: "/pages/initiative.html",
     icon: "/images/icon-thumb-up.svg",
   },
   {
