@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const curtidaImgs = document.querySelectorAll(
     '.container_curtidas_icon[id="curtida"]'
@@ -34,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
   const headerMenu = document.querySelector(".header_menu_perfil");
   const overlay = document.querySelector(".overlay");
 
@@ -60,23 +58,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
-
-
   const comentario = document.querySelector(".container_comentarios_icon");
   const overlayProjeto = document.querySelector(".overlayProjeto");
-  const close = document.querySelector(".close")
-  
+  const close = document.querySelector(".close");
+
   // Função para mostrar o div de overlay
   function showOverlayProjeto() {
     overlayProjeto.style.display = "block";
   }
-  
+
   // Função para esconder o div de overlay
   function hideOverlayProjeto() {
     overlayProjeto.style.display = "none";
   }
-  
+
   // Evento de clique na imagem header_menu
   comentario.addEventListener("click", () => {
     if (overlayProjeto.style.display === "block") {
@@ -85,20 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
       showOverlayProjeto();
     }
   });
-  
+
   // Evento de clique fora do div de overlay
   close.addEventListener("click", (event) => {
     if (event.target !== overlayProjeto) {
       hideOverlayProjeto();
     }
   });
-  
-  
-  
-  
-  
-
-
 
   const curtidaImgsOverlay = document.querySelectorAll(
     '.overlayProjeto_curtidas_icon[id="curtidaOverlay"]'
@@ -118,21 +106,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
 });
 
 var swiper = new Swiper(".swiper", {
-    cssMode: true,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    keyboard: true,
-  });
-
-  
-
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  keyboard: true,
+});
