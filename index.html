@@ -10,8 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="./script/script.js" defer></script>
   <script src="/script/siderBar.js" defer></script>
-  <script src="/script/posts.js" defer></script>
-  <script>
+  <script type="module" defer>
+    import {displayPosts} from "/script/posts.js"
+
     const isLogged = sessionStorage.getItem("isLogged");
 
     if (!isLogged) {
@@ -21,6 +22,8 @@
         window.location.href = "pages/intro.html"; // Redirecionar após 3 segundos
       }, 1); // Tempo em milissegundos (3 segundos)
     }
+
+    displayPosts()
   </script>
 </head>
 

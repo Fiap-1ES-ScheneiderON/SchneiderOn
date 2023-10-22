@@ -74,6 +74,10 @@
   padding: 2rem;
 }
 
+.profile-container .categories div {
+  cursor: pointer;
+}
+
 .profile-container .categories .selected {
   color: var(--verde1);
 }

@@ -39,13 +39,15 @@ const initialPosts = [
   },
 ];
 
-function displayPosts() {
+export function displayPosts(user = "") {
   const postList = document.querySelector(`.${POST_LIST_ID}`);
   const posts = getPosts();
 
   posts.forEach((post) => {
-    const postHTML = renderPostHTML(post);
-    postList.appendChild(postHTML);
+    if (!user || post.profile.name === user) {
+      const postHTML = renderPostHTML(post);
+      postList.appendChild(postHTML);
+    }
   });
 }
 
@@ -83,23 +85,22 @@ function renderPostHTML(post) {
                     (category) => `
                     <p class="category">${category}</p>
                 `
-                  ).join("")}
+                  )
+                  .join("")}
             </div>
             ${post.image && `<img class="post-image" src="${post.image}"/>`}
             <div class="interactions">
               <div class="likes">
-                <img class="icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
+                <img class="icon" id="curtida" src="/images/curtida.svg" alt="curtida da página">
                 <p class="quantity">${post.interactions.likes}</p>
               </div>
               <div class="comments">
-                <img class="icon" src="./images/comentario.svg" alt="comentários do post">
+                <img class="icon" src="/images/comentario.svg" alt="comentários do post">
                 <p class="quantity">${post.interactions.comments}</p>
               </div>
-              <img class="save-post" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
+              <img class="save-post" id="salvar" src="/images/Salvar.svg" alt="salvar o post">
             </div>
           </main>
     `;
   return div;
 }
-
-displayPosts();
