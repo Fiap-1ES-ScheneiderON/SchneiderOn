@@ -33,7 +33,7 @@ const navItems = [
 ];
 
 function createSideBar() {
-  const sidebar = document.getElementById(SIDEBAR_ID);
+  const sidebar = document.querySelector(`.${SIDEBAR_ID}`);
   const logo = createLogo();
   const navBar = createNavBar();
   const footer = createSideBarFooter();
@@ -76,20 +76,20 @@ function createNavBar() {
 
 function createSideBarFooter() {
   const footer = document.createElement("div")
-  footer.id = "sidebar-footer"
+  footer.className = "sidebar-footer"
 
   footer.innerHTML = `
-    <a id="new-post" href="/pages/postagem.html">Postagem</a>
-    <a id="profile-settings" href="/pages/perfil.html">
-      <img id="profile" src="/images/perfil.svg"/>
-      <div id="info">
+    <a class="new-post" href="/pages/postagem.html">Postagem</a>
+    <a class="profile-settings" href="/pages/perfil.html">
+      <img class="profile" src="/images/perfil.svg"/>
+      <div class="info">
       <span>Paula Freitas</span>
-        <div id="level">
+        <div class="level">
           <img src="/images/SementeFoto.svg" />
           <span>Semente</span>
         </div>
       </div>
-      <div id="coins">
+      <div class="coins">
         <span>125</span>
         <img src="/images/bi_coin.png" />
       </div>

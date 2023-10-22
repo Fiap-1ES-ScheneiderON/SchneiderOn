@@ -44,7 +44,24 @@ body {
 
 }
 
+.main-container {
+    display: grid;
+    grid-template-columns: 33rem auto;
+    grid-template-areas: "sidebar content";
+    margin: 0 auto;
+}
 
+.sidebar {
+    position: fixed;
+    grid-area: sidebar;
+    padding: 2rem;
+    border-right: 0.1rem solid #D9D9D9;
+}
+
+.content {
+    grid-area: content;
+    padding-top: 4rem;
+}
 
 .espaco{
     height: 4.1875rem;

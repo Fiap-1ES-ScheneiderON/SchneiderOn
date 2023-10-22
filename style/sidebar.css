@@ -1,22 +1,14 @@
-#sidebar {
-    position: fixed;
-    width: 33rem;
-    height: 100vh;
-    padding: 2rem;
-    border-right: 0.1rem solid #D9D9D9;
-}
-
-#sidebar nav {
+.sidebar nav {
     margin: 9.6rem 0 10rem 0;
 }
 
-#sidebar nav ul {
+.sidebar nav ul {
     display: flex;
     flex-direction: column;
     gap: 3.6rem;
 }
 
-#sidebar .menuItem {
+.sidebar .menuItem {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -26,35 +18,34 @@
     border-radius: 5.2rem
 }
 
-#sidebar .menuItem.selected {
+.sidebar .menuItem.selected {
     background-color: #F4FFDF;
 }
-#sidebar .menuItem img {
+.sidebar .menuItem img {
     width: 2.4rem;
     height: 2.4rem;
 }
 
-#sidebar #sidebar-footer {
+.sidebar .sidebar-footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-#sidebar #sidebar-footer a {
+.sidebar .sidebar-footer a {
     font-family: var(--fonte-principal);
     border-radius: 5.2rem;
-    border: none;
     text-align: center;
 }
 
-#sidebar #sidebar-footer #new-post {
+.sidebar .sidebar-footer .new-post {
     padding: 2.1rem 10rem;
     background-color: var(--verde1);
     font-weight: bold;
     color: #FFF;
 }
 
-#sidebar #sidebar-footer #profile-settings {
+.sidebar .sidebar-footer .profile-settings {
     background-color: #F4FFDF;
     border: 1px solid var(--verde2);
     font-weight: bold;
@@ -67,42 +58,42 @@
     padding-block: 1.2rem;
 }
 
-#sidebar #sidebar-footer #profile-settings img#profile {
+.sidebar .sidebar-footer .profile-settings img.profile {
     border-radius: 4rem;
     width: 4rem;
     height: 4rem;
 }
 
-#sidebar #sidebar-footer #profile-settings #info {
+.sidebar .sidebar-footer .profile-settings .info {
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-#sidebar #sidebar-footer #profile-settings #info #level {
+.sidebar .sidebar-footer .profile-settings .info .level {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
 }
 
-#sidebar #sidebar-footer #profile-settings #info #level img{
+.sidebar .sidebar-footer .profile-settings .info .level img{
     width: 2rem;
     height: 1.8rem;
 }
 
-#sidebar #sidebar-footer #profile-settings #info #level span{
+.sidebar .sidebar-footer .profile-settings .info .level span{
     color: var(--verde1);
 }
 
-#sidebar #sidebar-footer #profile-settings #coins {
+.sidebar .sidebar-footer .profile-settings .coins {
     display: flex;
     align-items: center;
     gap: 1.2rem;
 }
 
-#sidebar #sidebar-footer #profile-settings #coins img {
+.sidebar .sidebar-footer .profile-settings .coins img {
     border-radius: 4rem;
     width: 3.2rem;
     height: 3.2rem;

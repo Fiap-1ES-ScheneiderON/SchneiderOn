@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: 5em;
   justify-content: center;
-  border-bottom: 1px solid var(--cinza2, #9FA0A4);
 }
 
 .foto_perfil {
