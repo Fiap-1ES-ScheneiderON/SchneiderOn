@@ -15,6 +15,7 @@
 .post .profile img {
   width: 6.6rem;
   height: 6.6rem;
+  border-radius: 10rem;
 }
 
 .post .profile div {

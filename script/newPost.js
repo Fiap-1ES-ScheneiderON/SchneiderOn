@@ -3,7 +3,7 @@ import { displayPosts } from "./posts.js";
 
 export function createNewPost(event) {
   event.preventDefault();
-  const categories = getSelectedCategories()
+  const categories = getSelectedCategories();
   const description = document.querySelector(".description-input").value;
 
   const posts = JSON.parse(localStorage.getItem("posts"));
@@ -29,10 +29,16 @@ export function createNewPost(event) {
     ...posts,
   ];
 
-  localStorage.setItem("posts", JSON.stringify(newPosts))
+  localStorage.setItem("posts", JSON.stringify(newPosts));
 
-  closeModal()
-  displayPosts()
+  closeModal();
+
+  if (window.location.pathname.includes("perfil")) {
+    displayPosts("Paula Freitas");
+    return;
+  }
+
+  displayPosts();
 }
 
 function getSelectedCategories() {
