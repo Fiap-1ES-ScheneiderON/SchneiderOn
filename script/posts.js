@@ -41,6 +41,8 @@ const initialPosts = [
 
 export function displayPosts(user = "") {
   const postList = document.querySelector(`.${POST_LIST_ID}`);
+  postList.innerHTML = ''
+
   const posts = getPosts();
 
   posts.forEach((post) => {

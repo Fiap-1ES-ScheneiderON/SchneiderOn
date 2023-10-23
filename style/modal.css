@@ -91,7 +91,7 @@
   margin-top: 4rem;
 }
 
-.new-post-form .description {
+.new-post-form .description-input {
   resize: none;
   outline: none;
   border: 1px solid #000;

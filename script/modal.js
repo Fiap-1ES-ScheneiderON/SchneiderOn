@@ -1,3 +1,5 @@
+import { createNewPost } from "./newPost.js";
+
 const CATEGORIES_OPTIONS = [
   "Alimentação",
   "Beleza e cuidados pessoais",
@@ -19,6 +21,7 @@ function displayModal() {
 
   selectCategoryEvent();
   closeModalEvent();
+  onSubmitHandler();
 }
 
 function renderModalHTML() {
@@ -45,7 +48,7 @@ function renderModalHTML() {
       </select>
 
       <div class="categories-selected"></div>
-      <textarea name="description" class="description"
+      <textarea name="description" class="description-input"
         placeholder="Contribua para uma sociedade mais sustentável..."></textarea>
 
       <footer>
@@ -83,15 +86,26 @@ function selectCategoryEvent() {
 }
 
 export function openModal() {
-    document.querySelector(".modal").classList.add("active");
+  document.querySelector(".modal").classList.add("active");
+}
+
+export function closeModal() {
+  document.querySelector("#select-category").value = ""
+  document.querySelector(".description-input").value = ""
+  document.querySelector(".categories-selected").innerHTML = ""
+  document.querySelector(".modal").classList.remove("active");
 }
 
 function closeModalEvent() {
   const closeIcon = document.querySelector(".close-modal-icon");
 
-  closeIcon.addEventListener("click", () => {
-    document.querySelector(".modal").classList.remove("active");
-  });
+  closeIcon.addEventListener("click", () => closeModal());
+}
+
+function onSubmitHandler() {
+  document
+    .querySelector(".new-post-form")
+    .addEventListener("submit", createNewPost);
 }
 
 displayModal();
