@@ -43,6 +43,8 @@
     background-color: var(--verde1);
     font-weight: bold;
     color: #FFF;
+    border-radius: 5.2rem;
+    cursor: pointer;
 }
 
 .sidebar .sidebar-footer .profile-settings {

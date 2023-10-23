@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="../script/script.js"></script>
-  <script src="/script/siderBar.js" defer></script>
+  <script src="/script/siderBar.js" type="module" defer></script>
   <script src="/script/shop.js" defer></script>
 </head>
 <body>
@@ -18,28 +18,7 @@
       <div class="shop-list"></div>
     </main>
   </div>
-
-  <!-- não codar apartir daqui -->
-  <!-- espaço para a barra não ficar em cima dos outros componentes  -->
-
-  <div class="overlay" id="overlay">
-    <div class="overlay_container">
-      <div class="overlay_perfil_container">
-        <a href="../pages/perfil.html"><img class="overlay_perfil"  src="../images/perfil.svg" alt="foto de perfil"></a>
-        <a href="../pages/perfil.html"><p class="overlay_nome">Paula Freitas</p></a>
-        <a href="../pages/perfil.html"><p class="overlay_verPerfil">Ver perfil</p></a>
-      </div>
-      <p class="overlay_topico">Configurações</p>
-      <a href="../pages/sobre_niveis.html"><p class="overlay_topico">Sobre os níveis</p></a>
-      <a href="../pages/sobre_impact_points.html"><p class="overlay_topico">Sobre os Impact Points</p></a>
-      <a href="../pages/shop.html"><p class="overlay_topico">Loja Schneider</p></a>
-      
-    </div>
-    <div class="overlay_container_botton">
-      <img class="overlay_container_botton_img" src="../images/LogoSchneiderBranco.png" alt="Logo da Schneider">
-      <p class="overlay_container_botton_text">Software da Schneider Eletric</p>
-    </div>
-  </div>
+<div class="modal"></div>
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+import { openModal } from "./modal.js";
+
 const SIDEBAR_ID = "sidebar";
 const navItems = [
   {
@@ -34,33 +36,31 @@ const navItems = [
 
 function createSideBar() {
   const sidebar = document.querySelector(`.${SIDEBAR_ID}`);
-  const logo = createLogo();
-  const navBar = createNavBar();
-  const footer = createSideBarFooter();
-
-  sidebar.appendChild(logo);
-  sidebar.appendChild(navBar);
-  sidebar.appendChild(footer)
+  createLogo(sidebar);
+  createNavBar(sidebar);
+  createSideBarFooter(sidebar);
 }
 
-function createLogo() {
+function createLogo(sidebar) {
   const imgElement = document.createElement("img");
   imgElement.src = "/images/SchneiderOnFinal.png";
   imgElement.height = 72;
   imgElement.width = 242;
-  return imgElement;
+  sidebar.appendChild(imgElement);
 }
 
-function createNavBar() {
+function createNavBar(sidebar) {
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
 
-  navItems.forEach(item => {
+  navItems.forEach((item) => {
     const li = document.createElement("li");
-    const selected = window.location.pathname.includes(item.link)
+    const selected = window.location.pathname.includes(item.link);
 
     li.innerHTML = `
-        <a href="${item.link}" class="menuItem ${selected && "selected"}" alt="${item.text}">
+        <a href="${item.link}" class="menuItem ${
+      selected && "selected"
+    }" alt="${item.text}">
             <img src=${item.icon} />
             <span>${item.text}</span>
         </a>
@@ -71,15 +71,15 @@ function createNavBar() {
 
   nav.appendChild(ul);
 
-  return nav;
+  sidebar.appendChild(nav);
 }
 
-function createSideBarFooter() {
-  const footer = document.createElement("div")
-  footer.className = "sidebar-footer"
+function createSideBarFooter(sidebar) {
+  const footer = document.createElement("div");
+  footer.className = "sidebar-footer";
 
   footer.innerHTML = `
-    <a class="new-post" href="/pages/postagem.html">Postagem</a>
+    <div class="new-post">Postagem</div>
     <a class="profile-settings" href="/pages/perfil.html">
       <img class="profile" src="/images/perfil.svg"/>
       <div class="info">
@@ -94,8 +94,12 @@ function createSideBarFooter() {
         <img src="/images/bi_coin.png" />
       </div>
     </a>
-  `
+  `;
 
-  return footer
+  sidebar.appendChild(footer);
+
+  document
+    .querySelector(".new-post")
+    .addEventListener("click", () => openModal());
 }
 createSideBar();

@@ -17,6 +17,7 @@
 @import url(./sobre_impact_points.css);
 @import url(./versao_desktop.css);
 @import url(./sidebar.css);
+@import url(./modal.css);
 
 :root {
   --branco: #ffffff;
