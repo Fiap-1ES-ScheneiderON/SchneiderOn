@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="./script/script.js" defer></script>
   <script src="/script/siderBar.js" type="module" defer></script>
+  <script src="/script/searchPost.js" type="module" defer></script>
   <script type="module" defer>
     import { displayPosts } from "/script/posts.js"
 
@@ -31,6 +32,10 @@
   <div class="main-container">
     <div class="sidebar"></div>
     <main class="content">
+      <div class="search-bar">
+        <button><img src="/images/search.svg" alt=""></button>
+        <input type="text" id="search-input" placeholder="Pesquise o tema desejado">
+      </div>
       <div class="posts"></div>
     </main>
   </div>

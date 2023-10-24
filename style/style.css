@@ -18,6 +18,7 @@
 @import url(./versao_desktop.css);
 @import url(./sidebar.css);
 @import url(./modal.css);
+@import url(./searchBar.css);
 
 :root {
   --branco: #ffffff;
