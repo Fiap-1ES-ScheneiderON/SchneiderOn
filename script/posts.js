@@ -39,17 +39,17 @@ const initialPosts = [
   },
 ];
 
-export function displayPosts(user = "") {
+export function displayPosts(user = "", search = "") {
   const postList = document.querySelector(`.${POST_LIST_ID}`);
-  postList.innerHTML = ''
+  postList.innerHTML = "";
 
   const posts = getPosts();
 
   posts.forEach((post) => {
-    if (!user || post.profile.name === user) {
-      const postHTML = renderPostHTML(post);
-      postList.appendChild(postHTML);
-    }
+    if (!shouldDisplayPost(post, user, search)) return;
+
+    const postHTML = renderPostHTML(post);
+    postList.appendChild(postHTML);
   });
 }
 
@@ -62,6 +62,15 @@ function getPosts() {
   }
 
   return posts;
+}
+
+function shouldDisplayPost(post, userFilter, searchFilter) {
+  const isUserMatch = !userFilter || post.profile.name === userFilter;
+  const isSearchMatch =
+    !searchFilter ||
+    post.description.toLowerCase().includes(searchFilter.toLowerCase());
+
+  return isUserMatch && isSearchMatch;
 }
 
 function renderPostHTML(post) {
