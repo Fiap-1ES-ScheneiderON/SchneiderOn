@@ -9,368 +9,38 @@
   <link rel="stylesheet" href="./style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="./script/script.js" defer></script>
-  <script src="/script/siderBar.js" defer></script>
-  <!-- <script>
-    const redirecionamentoJáOcorreu = sessionStorage.getItem("redirecionamento");
+  <script src="/script/siderBar.js" type="module" defer></script>
+  <script src="/script/searchPost.js" type="module" defer></script>
+  <script type="module" defer>
+    import { displayPosts } from "/script/posts.js"
 
-    if (!redirecionamentoJáOcorreu) {
-      sessionStorage.setItem("redirecionamento", "true");
+    const isLogged = sessionStorage.getItem("isLogged");
+
+    if (!isLogged) {
+      sessionStorage.setItem("isLogged", true);
 
       setTimeout(function () {
         window.location.href = "pages/intro.html"; // Redirecionar após 3 segundos
       }, 1); // Tempo em milissegundos (3 segundos)
     }
 
-  </script> -->
+    displayPosts()
+  </script>
 </head>
 
 <body>
-  <div class="sidebar"></div>
-  <main class="content">
-    <section id="desktop_index">
-      <div class="loja_titulo"> 
-        
-        <P class="titulo_home"> <span class="titulo_home_destaque"> Página </span> Inicial </P> 
-      
-      </div> 
-
-      <div class="espaco"></div>
-
-      <div class="container">
-        <img class="foto_perfil" src="./images/thiagoPerfil.svg" alt="foto de perfil">
-        <div>
-          <div class="usuario_postagem">
-            <div>
-              <p class="nome_usuario">Thiago Eiji Matumoto</p>
-              <div class="titulo_usuario">
-                <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema semente">
-                <p class="titulo_nome">Ambientalista</p>
-              </div>
-            </div>
-            <img class="usuario_options" src="./images/dots.svg" alt="options">
-          </div>
-          <p class="texto_postagem">
-            Venho com muito orgulho compartilhar com vocês um projeto muito querido! A Schneider On está finalmente no
-            ar e venho em primeira mão informar o quão feliz eu estou por esse momento! Nosso objetivo é inovar no meio
-            da sustentabilidade, trazer uma experiência jamais vista, uma plataforma gameficada e sustentável. <br>
-            <strong class="texto_postagem_destaque">Clicke nos comentários para saber mais sobre o projeto!</strong>
-          </p>
-          <div class="container_categorias">
-            <p class="categoria">Tecnologia</p>
-            <p class="categoria">Sustentabilidade</p>
-            <p class="categoria">Inovação</p>
-            <p class="categoria">Comunidade</p>
-  
-          </div>
-          <div class="midia_div">
-            <iframe class="midia_postagem" width="2064" height="863" src="https://www.youtube.com/embed/TRydhz4bHTs"
-              title="SchneiderOn - Uma nova maneira de ser sustentável" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-          <div class="container_interacoes">
-            <div class="container_curtidas_comentarios">
-              <div class="container_curtidas">
-                <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
-                <p class="container_curtidas_numero">12034</p>
-              </div>
-              <div class="container_comentarios">
-                <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
-                <p class="container_comentarios_numero">5</p>
-              </div>
-            </div>
-            <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
-          </div>
-        </div>
+  <div class="main-container">
+    <div class="sidebar"></div>
+    <main class="content">
+      <div class="search-bar">
+        <button><img src="/images/search.svg" alt=""></button>
+        <input type="text" id="search-input" placeholder="Pesquise o tema desejado">
       </div>
-  
-      <!-- aqui fica os comentários sobre o projeto -->
-      <div class="overlayProjeto" id="overlayProjeto">
-        <div class="overlayProjeto_container">
-          <div class="overlayProjeto_container_close"><img class="close" src="./images/x.svg" alt=""></div>
-  
-          <!-- copiar essa div inteira e modificar o conteúdo -->
-          <div class="overlayProjeto_comentario">
-            <img class="overlayProjeto_foto_perfil" src="./images/thiagoPerfil.svg" alt="foto de perfil">
-            <div class="overlayProjeto_comentario_container">
-              <div class="overlayProjeto_comentario_usuario">
-                <div>
-                  <p class="nome_usuario">Thiago Eiji Matumoto</p>
-                  <div class="titulo_usuario">
-                    <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema semente">
-                    <p class="titulo_nome">Ambientalista</p>
-                  </div>
-                </div>
-                <div class="overlayProjeto_curtidas">
-                  <img class="overlayProjeto_curtidas_icon" id="curtidaOverlay" src="./images/curtida.svg"
-                    alt="curtida da página">
-                  <p class="overlayProjeto_curtidas_numero">289</p>
-                </div>
-              </div>
-              <p class="overlayProjeto_comentario_texto">
-                Dentro do projeto utilizamos conceitos de diversas matérias do 1º semestre na Engenharia de
-                Software da FIAP. <br>
-                Nosso primeiro passo foi a idealização do projeto, para isso usamos conceitos de
-                <strong>sustentabilidade</strong> como inspiração, focamos em atender o tripé da sustentabilidade (Triple
-                Bottol Line). Com esse objetivo em mente, nasceu a Schneider On. <br>
-                Mas para dar certo tinha um coisa muito importante a ser feita, o planejamento. Para isso
-                usamos um modelo kanban com alguns rituais do scrum aprendidos na matéria de <strong>Software
-                  Design</strong>. Planejando as entregas, ministrando prazos, priorizando atividades e alertando sobre
-                impedimentos. <br>
-                Para apresentarmos o projeto, a matéria <strong>Storytelling </strong>foi crucial para
-                realizar uma apresentação bem elaborada, fazendo uma linha do tempo e trazendo os pontos principais do
-                projeto, como a dor que ela resolve, objetivos e como resolver o problema. <br>
-                Após criarmos um design para o projeto, com o <strong>HTML, CSS e Bootstrap 5</strong> visto
-                nas matérias de <strong>Front-End Design</strong> foi usado para a montagem das páginas e estilização do
-                conteúdo! Fazendo o projeto sair do papel.<br>
-                Utilizando a <strong>Lógica de programação</strong> com <strong> Java Script</strong> conseguimos animar
-                as nossas páginas do projeto, colocando vida e deixando mais dinâmico.<br>
-              </p>
-            </div>
-          </div>
-  
-          <!--Thiago Eiji-->
-          <div class="overlayProjeto_comentario">
-            <img class="overlayProjeto_foto_perfil" src="./images/thiagoPerfil.svg" alt="foto de perfil">
-            <div class="overlayProjeto_comentario_container">
-              <div class="overlayProjeto_comentario_usuario">
-                <div>
-                  <p class="nome_usuario">Thiago Eiji Matumoto</p>
-                  <div class="titulo_usuario">
-                    <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema semente">
-                    <p class="titulo_nome">Ambientalista</p>
-                  </div>
-                </div>
-                <div class="overlayProjeto_curtidas">
-                  <img class="overlayProjeto_curtidas_icon" id="curtidaOverlay" src="./images/curtida.svg"
-                    alt="curtida da página">
-                  <p class="overlayProjeto_curtidas_numero">128</p>
-                </div>
-              </div>
-              <p class="overlayProjeto_comentario_texto">
-                <strong>Minhas atribuições dentro da Schneider On:</strong><br>
-                UI/UX Designer <br>
-                Product Owner <br>
-                Scrum Master <br>
-                Desenvolvedor Front-End <br>
-                Desenvolvimento e edição do Pitch <br>
-                QA <br>
-                Responsividade <br>
-                Processo de idealização e criação <br>
-              </p>
-            </div>
-          </div>
-  
-          <!--Mayara Moura-->
-          <div class="overlayProjeto_comentario">
-            <img class="overlayProjeto_foto_perfil" src="./images/perfilMayara" alt="foto de perfil">
-            <div class="overlayProjeto_comentario_container">
-              <div class="overlayProjeto_comentario_usuario">
-                <div>
-                  <p class="nome_usuario">Mayara da Silva Moura</p>
-                  <div class="titulo_usuario">
-                    <img class="titulo_emblema" src="./images/ecologista.png" alt="emblema ecologista">
-                    <p class="titulo_nome">Ecologista</p>
-                  </div>
-                </div>
-                <div class="overlayProjeto_curtidas">
-                  <img class="overlayProjeto_curtidas_icon" id="curtidaOverlay" src="./images/curtida.svg"
-                    alt="curtida da página">
-                  <p class="overlayProjeto_curtidas_numero">40</p>
-                </div>
-              </div>
-              <p class="overlayProjeto_comentario_texto">
-                <strong>Minhas atribuições dentro da Schneider On:</strong><br>
-                Desenvolvedora Front-End <br>
-                Design thinking <br>
-                Desenvolvimento e apresentação Pitch <br>
-                UI/UX Designer <br>
-                Processo criativo e idealização <br>
-                QA <br>
-                Responsividade <br>
-              </p>
-            </div>
-          </div>
-  
-          <!--Gabriel Maia-->
-          <div class="overlayProjeto_comentario">
-            <img class="overlayProjeto_foto_perfil" src="./images/PerfilGabriel.jpg" alt="foto de perfil">
-            <div class="overlayProjeto_comentario_container">
-              <div class="overlayProjeto_comentario_usuario">
-                <div>
-                  <p class="nome_usuario">Gabriel Alves Maia Rodrigues</p>
-                  <div class="titulo_usuario">
-                    <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema semente">
-                    <p class="titulo_nome">Ambientalista</p>
-                  </div>
-                </div>
-                <div class="overlayProjeto_curtidas">
-                  <img class="overlayProjeto_curtidas_icon" id="curtidaOverlay" src="./images/curtida.svg"
-                    alt="curtida da página">
-                  <p class="overlayProjeto_curtidas_numero">99</p>
-                </div>
-              </div>
-              <p class="overlayProjeto_comentario_texto">
-                <strong>Minhas atribuições dentro da Schneider On:</strong><br>
-                UI/UX Designer <br>
-                Desenvolvedor Front-End <br>
-                Apresentação Pitch <br>
-                Processo criativo <br>
-                Design thinking <br>
-                QA <br>
-                Responsividade <br>
-              </p>
-            </div>
-          </div>
-  
-          <!--Pedro Paulo Rodrigues-->
-          <div class="overlayProjeto_comentario">
-            <img class="overlayProjeto_foto_perfil" src="./images/PedroPerfil.PNG" alt="foto de perfil">
-            <div class="overlayProjeto_comentario_container">
-              <div class="overlayProjeto_comentario_usuario">
-                <div>
-                  <p class="nome_usuario">Pedro Paulo Rodrigues Guimarães</p>
-                  <div class="titulo_usuario">
-                    <img class="titulo_emblema" src="./images/ambientalista.svg" alt="emblema ambientalista">
-                    <p class="titulo_nome">Ambientalista</p>
-                  </div>
-                </div>
-                <div class="overlayProjeto_curtidas">
-                  <img class="overlayProjeto_curtidas_icon" id="curtidaOverlay" src="./images/curtida.svg"
-                    alt="curtida da página">
-                  <p class="overlayProjeto_curtidas_numero">10</p>
-                </div>
-              </div>
-              <p class="overlayProjeto_comentario_texto">
-                <strong>Minhas atribuições dentro da Schneider On:</strong><br>
-                Desenvolvedor Front-End <br>
-                Apresentação Pitch <br>
-                Processo criativo <br>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-  
-  
-      <div class="container">
-        <img class="foto_perfil" src="./images/perfil.svg" alt="foto de perfil">
-        <div>
-          <div class="usuario_postagem">
-            <div>
-              <p class="nome_usuario">Paula Freitas</p>
-              <div class="titulo_usuario">
-                <img class="titulo_emblema" src="./images/SementeFoto.svg" alt="emblema semente">
-                <p class="titulo_nome">Semente</p>
-              </div>
-            </div>
-            <img class="usuario_options" src="./images/dots.svg" alt="options">
-          </div>
-          <p class="texto_postagem">
-            Estou muito feliz em compartilhar com vocês o impacto que causamos!!! Hoje foi colocado lixeiras de coleta
-            seletiva no meu condomínio!
-            Juntos podemos fazer a diferença! <br>#ComprometidaComOMeioAmbiente <br>#SouSchneiderOn
-          </p>
-          <div class="container_categorias">
-            <p class="categoria">Coleta Seletiva</p>
-            <p class="categoria">Sustententabilidade em casa</p>
-          </div>
-          <div class="midia_div">
-            <img class="midia_postagem" src="./images/postagemColetaSeletiva.svg" alt="Postagem de coleta seletiva">
-          </div>
-          <div class="container_interacoes">
-            <div class="container_curtidas_comentarios">
-              <div class="container_curtidas">
-                <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
-                <p class="container_curtidas_numero">235</p>
-              </div>
-              <div class="container_comentarios">
-                <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
-                <p class="container_comentarios_numero">23</p>
-              </div>
-            </div>
-            <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
-          </div>
-        </div>
-      </div>
-  
-  
-      <div class="container">
-        <img class="foto_perfil" src="./images/lucarAlcantara.svg" alt="foto de perfil">
-        <div>
-          <div class="usuario_postagem">
-            <div>
-              <p class="nome_usuario">Lucas Alcântara</p>
-              <div class="titulo_usuario">
-                <img class="titulo_emblema" src="./images/brotinho.svg" alt="emblema de broto">
-                <p class="titulo_nome">Brotinho</p>
-              </div>
-            </div>
-            <img class="usuario_options" src="./images/dots.svg" alt="options">
-          </div>
-          <p class="texto_postagem">
-            Muitas pessoas não sabem, mas o óleo de cozinha pode ser reutilizado de diversas maneiras, como pro exemplo
-            na produção de biodiesel, tintas a óleo e até sabão. Pensando nisso, resolvi compartilhar o que fazer para
-            <span>Ver mais...</span> <br>#ReutilizeParaPreservar <br>#SomosSchneiderOn
-          </p>
-          <div class="container_categorias">
-            <p class="categoria">Descarte correto</p>
-            <p class="categoria">Alimentação</p>
-          </div>
-          <div class="midia_div">
-            <img class="midia_postagem" src="./images/postavelOleo.svg" alt="Postagem de coleta seletiva">
-          </div>
-          <div class="container_interacoes">
-            <div class="container_curtidas_comentarios">
-              <div class="container_curtidas">
-                <img class="container_curtidas_icon" id="curtida" src="./images/curtida.svg" alt="curtida da página">
-                <p class="container_curtidas_numero">123</p>
-              </div>
-              <div class="container_comentarios">
-                <img class="container_comentarios_icon" src="./images/comentario.svg" alt="comentários do post">
-                <p class="container_comentarios_numero">12</p>
-              </div>
-            </div>
-            <img class="container_salvar_icon" id="salvar" src="./images/Salvar.svg" alt="salvar o post">
-          </div>
-        </div>
-      </div>
-  
+      <div class="posts"></div>
+    </main>
+  </div>
 
-      
-    <div class="espaco">.</div>
-    </section>
-
-    <div class="overlay" id="overlay">
-      <div class="overlay_container">
-        <div class="overlay_perfil_container">
-          <a href="./pages/perfil.html"><img class="overlay_perfil" src="./images/perfil.svg" alt="foto de perfil"></a>
-          <a href="./pages/perfil.html">
-            <p class="overlay_nome">Paula Freitas</p>
-          </a>
-          <a href="./pages/perfil.html">
-            <p class="overlay_verPerfil">Ver perfil</p>
-          </a>
-        </div>
-        <p class="overlay_topico">Configurações</p>
-        <a href="../pages/sobre_niveis.html">
-          <p class="overlay_topico">Sobre os níveis</p>
-        </a>
-        <p class="overlay_topico">Sobre os Impact Points</p>
-        <a href="./pages/shop.html">
-          <p class="overlay_topico">Loja Schneider</p>
-        </a>
-      </div>
-      <div class="overlay_container_botton">
-        <img class="overlay_container_botton_img" src="./images/LogoSchneiderBranco.png" alt="Logo da Schneider">
-        <p class="overlay_container_botton_text">Software da Schneider Eletric</p>
-      </div>
-    </div>
-
-  </main>
-
-
+  <div class="modal"></div>
 </body>
 
 </html>
