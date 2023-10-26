@@ -1,102 +1,149 @@
 .sidebar nav {
-    margin: 9.6rem 0 10rem 0;
+  margin: 9.6rem 0 10rem 0;
 }
 
 .sidebar nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
 }
 
 .sidebar .menuItem {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.2rem;
-    padding: 1.2rem;
-    font-weight: bold;
-    border-radius: 5.2rem
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  font-weight: bold;
+  border-radius: 5.2rem;
+  cursor: pointer;
 }
 
 .sidebar .menuItem.selected {
-    background-color: #F4FFDF;
+  background-color: #f4ffdf;
 }
 .sidebar .menuItem img {
-    width: 2.4rem;
-    height: 2.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .sidebar .sidebar-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .sidebar .sidebar-footer a {
-    font-family: var(--fonte-principal);
-    border-radius: 5.2rem;
-    text-align: center;
+  font-family: var(--fonte-principal);
+  border-radius: 5.2rem;
+  text-align: center;
 }
 
 .sidebar .sidebar-footer .new-post {
-    padding: 2.1rem 10rem;
-    background-color: var(--verde1);
-    font-weight: bold;
-    color: #FFF;
-    border-radius: 5.2rem;
-    cursor: pointer;
+  padding: 2.1rem 10rem;
+  background-color: var(--verde1);
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5.2rem;
+  cursor: pointer;
 }
 
 .sidebar .sidebar-footer .profile-settings {
-    background-color: #F4FFDF;
-    border: 1px solid var(--verde2);
-    font-weight: bold;
-    color: #000;
+  background-color: #f4ffdf;
+  border: 1px solid var(--verde2);
+  font-weight: bold;
+  color: #000;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    padding-block: 1.2rem;
+  padding-block: 1.2rem;
 }
 
 .sidebar .sidebar-footer .profile-settings img.profile {
-    border-radius: 4rem;
-    width: 4rem;
-    height: 4rem;
+  border-radius: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .sidebar .sidebar-footer .profile-settings .info {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .sidebar .sidebar-footer .profile-settings .info .level {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
 }
 
-.sidebar .sidebar-footer .profile-settings .info .level img{
-    width: 2rem;
-    height: 1.8rem;
+.sidebar .sidebar-footer .profile-settings .info .level img {
+  width: 2rem;
+  height: 1.8rem;
 }
 
-.sidebar .sidebar-footer .profile-settings .info .level span{
-    color: var(--verde1);
+.sidebar .sidebar-footer .profile-settings .info .level span {
+  color: var(--verde1);
 }
 
 .sidebar .sidebar-footer .profile-settings .coins {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .sidebar .sidebar-footer .profile-settings .coins img {
-    border-radius: 4rem;
-    width: 3.2rem;
-    height: 3.2rem;
+  border-radius: 4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* Others modal */
+.sidebar .modalOthers {
+  background-color: #fff;
+  border: 0.1rem solid #d9d9d9;
+  border-radius: 0.8rem;
+
+  position: absolute;
+  bottom: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem 6.2rem;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.sidebar .modalOthers.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar .modalOthers img {
+    width: 1.4rem;
+    height: 2rem;
+}
+
+.sidebar .modalOthers ul {
+    display: flex;
+    align-items: flex-start;
+}
+
+.sidebar .modalOthers ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--verde1);
 }

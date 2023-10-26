@@ -27,11 +27,11 @@ const navItems = [
     link: "/pages/perfil.html",
     icon: "/images/icon-person.svg",
   },
-  {
-    text: "Outros",
-    link: "#",
-    icon: "/images/icon-menu.svg",
-  },
+  // {
+  //   text: "Outros",
+  //   link: "#",
+  //   icon: "/images/icon-menu.svg",
+  // },
 ];
 
 function createSideBar() {
@@ -69,6 +69,8 @@ function createNavBar(sidebar) {
     ul.appendChild(li);
   });
 
+  ul.appendChild(createOthersItem());
+
   nav.appendChild(ul);
 
   sidebar.appendChild(nav);
@@ -102,4 +104,44 @@ function createSideBarFooter(sidebar) {
     .querySelector(".new-post")
     .addEventListener("click", () => openModal());
 }
+
+function createOthersItem() {
+  const items = [
+    "Configurações",
+    "Sobre Impact Points",
+    "Sobre os níveis",
+    "Sobre o projeto",
+  ];
+  const li = document.createElement("li");
+
+  li.innerHTML = `
+    <div class="menuItem" alt="Outros">
+            <img src="/images/icon-menu.svg" />
+            <span>Outros</span>
+
+      <div class="modalOthers">
+        <ul>
+        ${items
+          .map(
+            (item) => `
+        <li>
+          <a href="">${item}</a>
+          <img src="/images/vector.svg"/>
+        </li>
+        `
+          )
+          .join("")}
+        </ul>
+      </div>
+      </div>
+    `;
+
+  li.addEventListener("click", () => {
+    const modal = document.querySelector(".modalOthers");
+    modal.classList.toggle("active");
+  });
+
+  return li;
+}
+
 createSideBar();
