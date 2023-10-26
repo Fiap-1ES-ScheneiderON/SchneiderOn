@@ -61,6 +61,24 @@
   margin: 0.7em 0;
 }
 
+.container_interacoes_monthly_challenge {
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+
+  margin-top: 1.2rem;
+}
+
+
+.container_interacoes_monthly_challenge .likes,
+.container_interacoes_monthly_challenge .comments {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  cursor: pointer;
+} 
+
 .challenge-list {
   display: flex;
   flex-direction: column;
