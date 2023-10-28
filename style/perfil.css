@@ -1,146 +1,83 @@
-.container_perfil {
-  margin: 1em;
+.profile-container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.profile-container .profile {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.perfil_dados {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.perfil_img {
-  margin-top: 1em;
-  width: 7em;
-  height: auto;
-}
-
-.perfil_nome {
-  margin-top: 0.6em;
-  color: #000;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.perfil_nivel_usuario {
-  display: flex;
-  flex-direction: row;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.perfil_semente_img {
-  width: 2em;
-}
-
-.perfil_semente_nome {
-  color: var(--verde2);
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-  margin-right: 0.7em;
-}
-
-.perfil_semente_nivel {
-  color: var(--verde2);
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 1em;
-  font-style: normal;
-  font-weight:300;
-  line-height: normal;
-}
-
-
-.perfil_sobre_mim_container {
-  margin-top: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-}
-
-.perfil_sobre_mim_local {
-  margin-bottom: 0.4em;
-  color: #000;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.perfil_sobre_mim_dados {
-  background: rgba(60, 203, 91, 0.25);
-  border-radius: 0.5em;
-  width: 100%;
-}
-
-.perfil_sobre_mim_box {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #000;
 }
 
-.perfil_sobre_mim_title {
-  color: var(--preto, #000);
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0.5em;
+.profile-container .profile .profile-image {
+  width: 14.6rem;
+  height: 14.6rem;
+  border-radius: 10rem;
 }
 
-.perfil_sobre_mim_lapis {
-  width: 1.5em;
-  margin: 0.5em;
-}
-
-.perfil_sobre_mim_text {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  margin-left: 1.3em;
-  margin-bottom: 1em;
-}
-
-.perfil_postagens {
-  width: 100%;
+.profile-container .profile .profile-info {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  margin-top: 2em
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+
+  flex: 1;
+  margin-left: 5rem;
 }
 
-.perfil_postagens_titulo {
-  color: #000;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 1.3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-left: 1em;
+.profile-container .profile .profile-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.profile-container .profile .profile-info .name {
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+
+.profile-container .profile .profile-info .level {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--verde1);
+}
+
+.profile-container .profile .profile-info .level img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.profile-container .profile .edit-profile {
+  background-color: var(--verde1);
+  padding: 1rem 4rem;
+  border-radius: 5.2rem;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.profile-container .categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.profile-container .categories div {
+  cursor: pointer;
+}
+
+.profile-container .categories .selected {
+  color: var(--verde1);
 }

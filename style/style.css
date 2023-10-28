@@ -5,7 +5,6 @@
 @import url(./perfil.css);
 @import url(./challenge.css);
 @import url(./pesquisa.css);
-@import url(./parceiros.css);
 @import url(./menu.css);
 @import url(./shop.css);
 @import url(./login.css);
@@ -18,36 +17,58 @@
 @import url(./sobre_impact_points.css);
 @import url(./versao_desktop.css);
 @import url(./sidebar.css);
+@import url(./modal.css);
+@import url(./searchBar.css);
 
 :root {
-    --branco: #FFFFFF;
-    --preto: #000000;           
-    --cinza1: #626469;
-    --cinza2: #9FA0A4;
-    --verde1: #3CCB5B;
-    --verde2: #009530;
-    --verde4: #87D300;
-    --fonte_principal: "Montserrat";
-    --peso_texto: '400';
-    --peso_nome: '500';
-    --peso_desafio: '700';
+  --branco: #ffffff;
+  --preto: #000000;
+  --cinza1: #626469;
+  --cinza2: #9fa0a4;
+  --verde1: #3ccb5b;
+  --verde2: #009530;
+  --verde4: #87d300;
+  --fonte_principal: "Montserrat";
+  --peso_texto: "400";
+  --peso_nome: "500";
+  --peso_desafio: "700";
+
+  font-size: 62.5%;
+  /* 1rem = 10px */
 }
 
 body {
-    font-family: var(--fonte_principal);
-    font-weight: 400;
-    background-color: var(--branco);
-
+  font-family: var(--fonte_principal);
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--branco);
 }
 
-
-
-.espaco{
-    height: 4.1875rem;
+.main-container {
+  display: grid;
+  grid-template-columns: 33rem auto;
+  grid-template-areas: "sidebar content";
+  margin: 0 auto;
 }
 
-.titulo_home{
-    color: var(--preto, #000);
+.sidebar {
+  position: fixed;
+  grid-area: sidebar;
+  padding: 2rem;
+  border-right: 0.1rem solid #d9d9d9;
+}
+
+.content {
+  grid-area: content;
+  padding-top: 4rem;
+}
+
+.espaco {
+  height: 4.1875rem;
+}
+
+.titulo_home {
+  color: var(--preto, #000);
   text-align: center;
   font-family: Montserrat;
   font-size: 2.45rem;
@@ -55,12 +76,12 @@ body {
   font-weight: 800;
   line-height: normal;
 }
-.titulo_home_destaque{
-    color: var(--verde1, #3CCB5B);
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 2.45rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal
+.titulo_home_destaque {
+  color: var(--verde1, #3ccb5b);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.45rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }

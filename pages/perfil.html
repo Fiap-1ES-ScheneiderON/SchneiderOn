@@ -9,243 +9,45 @@
   <link rel="stylesheet" href="../style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="../script/perfil.js"></script>
+  <script src="/script/siderBar.js" type="module" defer></script>
+  <script src="/script/profilePosts.js" type="module" defer></script>
 </head>
 
 <body>
-  <aside class="sidebar">
-    <header class="sidebar-header">
-      <img class="logo-img" src="../images/perfil.svg" alt="Foto de perfil">
-      <span>Paula Freitas</span><br>
-      <div class="container-nivel-sidebar">
-      <span>
-        <img class="nivel-sidebar" src="../images/SementeFoto.svg" alt="nível de perfil">
-        <span class="semente-sidebar">Semente</span><br>
-      </div>
-      <div class="header_impact_points">
-        <a href="./pages/shop.html"><img class="header_impact_points_imagem" src="../images/bi_coin.png"
-          alt="Impact Points"></a>
-        <a href="./pages/shop.html">
-          <p class="header_impact_points_numero">125</p>
-        </a>
-      </div>
-      </span>
-      <a href="../pages/perfil.html">
-        <button class="btn-verperfil">
-        <span>Ver perfil</span>
-      </button>
-      </a>
-    </header>
-    <nav>
-      
-      <a href="../index.html">
-        <button>
-        <span>
-          <img src="../images/home-preto.svg" alt="Página inicial">
-          <span>Página inicial</span>
-        </span>
-        </button>
-      </a>
-      <a href="../pages/pesquisa.html">
-        <button>
-          <span>
-            <img src="../images/search.svg" alt="Pesquisar">
-            <span>Pesquisar</span>
-          </span>
-        </button>
-      </a>
-      <a href="../pages/postagem.html">
-        <button>
-          <span>
-            <img src="../images/post-add.svg" alt="Postagem">
-            <span>Nova postagem</span>
-          </span>
-        </button>
-      </a>
-      <a href="../pages/challenge.html">
-        <button>
-          <span>
-            <img src="../images/earth-leaf.svg" alt="Challenge">
-            <span>Challenge</span>
-          </span>
-        </button>
-      </a>
-      <a href="../pages/partner.html">
-        <button>
-          <span>
-            <img src="../images/ParceiroPreto.svg" alt="Parceiros">
-            <span>Parceiros</span>
-          </span>
-        </button>
-      </a>
-      <div class="btn-infos">
-        <a href="../pages/shop.html">
-          <button>
-            <span>
-              <span>Loja SchneiderOn</span>
-            </span>
-          </button>
-        </a>
-        <a href="../pages/sobre_niveis.html">
-          <button>
-            <span>
-              <span>Níveis</span>
-            </span>
-          </button>
-        </a>
-        <a href="../pages/sobre_impact_points.html">
-          <button>
-            <span>
-              <span>Impact Points</span>
-            </span>
-          </button>
-        </a>
-      </div>
-    </nav>
-    <div class="sidebar-footer"></div>
-    
-  </aside>
+  <div class="main-container">
+    <div class="sidebar"></div>
+    <main class="content">
+        <div class="profile-container">
+          <section class="profile">
+            <img class="profile-image" src="/images/perfil.svg" alt="">
 
-  <main>
-    <!-- espaço para a barra não ficar em cima dos outros componentes  -->
-    <div class="espaco"></div>
-
-    <!-- código apartir daqui -->
-
-    <div class="desktop_perfil">
-      <section class="container_perfil">
-        <div class="perfil_dados">
-          <img class="perfil_img" src="../images/fotoDePerfilPaginaPerfil.svg" alt="foto de perfil">
-          <p class="perfil_nome">Paula Freitas</p>
-          <div class="perfil_nivel_usuario">
-            <img class="perfil_semente_img" src="../images/semente.png">
-            <p class="perfil_semente_nome">Semente</p>
-            <p class="perfil_semente_nivel">Lvl 1</p>
-          </div>
-        </div>
-  
-        <div class="perfil_sobre_mim_container">
-          <p class="perfil_sobre_mim_local">São Paulo, Brasil - Engenharia</p>
-          <div class="perfil_sobre_mim_dados">
-            <div class="perfil_sobre_mim_box">
-              <p class="perfil_sobre_mim_title">Sobre mim</p>
-              <img class="perfil_sobre_mim_lapis" src="../images/lapis.png">
+            <div class="profile-info">
+              <div>
+                <span class="name">Paulo Freitas</span>
+                <div class="level">
+                  <img src="/images/SementeFoto.svg" />
+                  <span>Semente</span>
+                </div>
+              </div>
+              <span class="details">São Paulo, Brasil - Engenharia</span>
             </div>
-            <p class="perfil_sobre_mim_text">
-              25 anos<br>
-              Engenheira elétrica<br>
-              Apaixonada por animais 🐾<br>
-              PCD♿
-            </p>
-          </div>
-        </div>
+
+            <a class="edit-profile" href="">Editar perfil</a>
+          </section>
   
-      </section>
-  
-  
-      <section>
-        <div class="perfil_postagens">
-          <p class="perfil_postagens_titulo">Postagens</p>
-          <div class="container">
-            <img class="foto_perfil" src="../images/perfil.svg" alt="foto de perfil">
-            <div class="perfil_postagem_desktop">
-              <div class="usuario_postagem">
-                <div>
-                  <p class="nome_usuario">Paula Freitas</p>
-                  <div class="titulo_usuario">
-                    <img class="titulo_emblema" src="../images/SementeFoto.svg" alt="emblema semente">
-                    <p class="titulo_nome">Semente</p>
-                  </div>
-                </div>
-                <img class="usuario_options" src="../images/dots.svg" alt="options">
-              </div>
-              <p class="texto_postagem">
-                Estou muito feliz em compartilhar com vocês o impacto que causamos!!! Hoje foi colocado lixeiras de coleta
-                seletiva no meu condomínio!
-                Juntos podemos fazer a diferença! <br>#ComprometidaComOMeioAmbiente <br>#SouSchneiderOn
-              </p>
-              <div class="container_categorias">
-                <p class="categoria">Coleta Seletiva</p>
-                <p class="categoria">Sustententabilidade em casa</p>
-              </div>
-              <div class="midia_div">
-                <img class="midia_postagem" src="../images/postagemColetaSeletiva.svg" alt="Postagem de coleta seletiva">
-              </div>
-              <div class="container_interacoes">
-                <div class="container_curtidas_comentarios">
-                  <div class="container_curtidas">
-                    <img class="container_curtidas_icon" id="curtida" src="../images/curtida.svg" alt="curtida da página">
-                    <p class="container_curtidas_numero">235</p>
-                  </div>
-                  <div class="container_comentarios">
-                    <img class="container_comentarios_icon" src="../images/comentario.svg" alt="comentários do post">
-                    <p class="container_comentarios_numero">23</p>
-                  </div>
-                </div>
-                <img class="container_salvar_icon" id="salvar" src="../images/Salvar.svg" alt="salvar o post">
+          <section>
+            <div class="profile-actions">
+              <div class="categories">
+                <div class="selected">Publicações</div>
+                <div>Curtidas</div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
-      <div class="espaco"></div> 
-    </div>
-
-    <!-- não codar apartir daqui -->
-    <!-- espaço para a barra não ficar em cima dos outros componentes  -->
-    <section class="header_mobile flexbox_container_header">
-      <img class="header_mobile_logo" src="../images/SchneiderOnFinal.png" alt="Logo da Schneider On">
-      <div class="flexbox_container_header header_direita">
-        <div class="header_impact_points">
-          <a href="../pages/shop.html">
-            <p class="header_impact_points_numero">125</p>
-          </a>
-          <a href="../pages/shop.html"><img class="header_impact_points_imagem" src="../images/bi_coin.png"
-              alt="Impact Points"></a>
-        </div>
-        <img class="header_menu_perfil" src="../images/perfil.svg" alt="menu">
-      </div>
-    </section>
-
-
-    <div class="overlay" id="overlay">
-      <div class="overlay_container">
-        <div class="overlay_perfil_container">
-          <a href="../pages/perfil.html"><img class="overlay_perfil" src="../images/perfil.svg"
-              alt="foto de perfil"></a>
-          <a href="../pages/perfil.html">
-            <p class="overlay_nome">Paula Freitas</p>
-          </a>
-          <a href="../pages/perfil.html">
-            <p class="overlay_verPerfil">Ver perfil</p>
-          </a>
-        </div>
-        <p class="overlay_topico">Configurações</p>
-        <a href="../pages/sobre_niveis.html">
-          <p class="overlay_topico">Sobre os níveis</p>
-        </a>
-        <a href="../pages/sobre_impact_points.html"><p class="overlay_topico">Sobre os Impact Points</p></a>
-        <a href="../pages/shop.html">
-          <p class="overlay_topico">Loja Schneider</p>
-        </a>
-        
-      </div>
-      <div class="overlay_container_botton">
-        <img class="overlay_container_botton_img" src="../images/LogoSchneiderBranco.png" alt="Logo da Schneider">
-        <p class="overlay_container_botton_text">Software da Schneider Eletric</p>
-      </div>
-    </div>
-    <section class="footer_mobile">
-      <div class="footer_sections flexbox_container_footer">
-        <a href="../index.html"><img class="footer_home" src="../images/home-preto.svg" alt="botão home"></a>
-        <a href="./pesquisa.html"><img class="footer_search" src="../images/search.svg" alt="botão pesquisa"></a>
-        <a href="./postagem.html"><img class="footer_post" src="../images/Post_add.svg" alt="botão postagem"></a>
-        <a href="./challenge.html"><img class="footer_challenge" src="../images/earth-leaf.svg" alt="botão desafio"></a>
-        <a href="./partner.html"><img class="footer_partner" src="../images/ParceiroPreto.svg"
-            alt="botão de parceiros"></a>
-      </div>
-    </section>
-
-  </main>
+        <div class="posts"></div>
+    </main>
+  </div>
+  <div class="modal"></div>
 
 </body>
 

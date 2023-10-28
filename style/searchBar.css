@@ -1,0 +1,32 @@
+.search-bar {
+  max-width: 70rem;
+  margin: 0 auto 2rem;
+  background-color: #f3ffdf;
+  border-radius: 4.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.search-bar button {
+  background-color: var(--verde4);
+  padding: 1.2rem;
+  border-radius: 4.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  flex: 1;
+  color: #000;
+  outline: none;
+  font-family: var(--fonte-principal);
+}
+
+.search-bar input::placeholder {
+  color: #000;
+}

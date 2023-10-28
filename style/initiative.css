@@ -1,0 +1,88 @@
+.initiative-list {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 2rem;
+  height: 100%;
+}
+
+.partner {
+  display: grid;
+  grid-template-columns: 30rem auto;
+  grid-template-areas: "imagem details";
+  margin: 2rem 0;
+  align-items: center;
+
+}
+
+.imagem-parceiro {
+  grid-area: imagem;
+  width: 300px;
+  height: 250px;
+  border-radius: 2rem;
+
+}
+
+.initiativeContainer {
+  grid-area: details;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  max-height: 35rem;
+  display: block;
+  margin-right: 5rem;
+}
+
+.initiativeContainer h1 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-bottom: 3px solid #3ccb5b;
+  margin-bottom: 1rem;
+}
+
+.initiativeContainer p {
+  font-size: 20px;
+}
+
+.initiaviveSubscribe {
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.initiaviveSubscribe a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 18px;
+  background: var(--Verde-1, #3ccb5b);
+  text-align: center;
+  padding: 13px 40px;
+}
+
+.coins {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.coins span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.coins img {
+  max-width: 40px;
+}
